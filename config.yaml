@@ -1,6 +1,6 @@
 baseURL: ''
 languageCode: 'en-us'
-title: 'John McBride'
+title: ''
 paginate: 5
 theme: 'PaperMod'
 
@@ -27,15 +27,12 @@ languages:
     weight: 1
     menu:
       main:
-        - name: Writing
+        - name: Blog
           url: archives
           weight: 1
         - name: RSS
           url: index.xml
           weight: 2
-        - name: Talks
-          url: talks/
-          weight: 3
         - name: Search
           url: search/
           weight: 4
@@ -47,7 +44,7 @@ languages:
 params:
   ShowFullTextinRSS: true
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: John-McBride
+  title: Logan-Roelofs
   description: ""
   keywords: [Blog, Software Engineer, Software Developer blog, Software developer]
   #author: John McBride
@@ -60,27 +57,27 @@ params:
   # Home profile mode
   profileMode:
     enabled: true
-    title: John McBride
-    subtitle: "Sr Software Engineer @ OpenSauced."
+    title: Logan Roelofs
+    subtitle: "Hacker Man"
     imageUrl: "images/profile-pic.jpg"
     imageWidth: 200
     imageHeight: 200
     imageTitle: "this is john mcbride"
   socialIcons:
     - name: email
-      url: "mailto:hello.john.codes@gmail.com"
+      url: "mailto:loroe333@gmail.com"
     - name: rss
-      url: "https://johncodes.com/index.xml"
+      url: "https://logan-roelofs.github.io/blog/index.xml"
     - name: github
-      url: "https://github.com/jpmcb"
-    - name: youtube
-      url: "https://youtube.com/c/JohnCodes"
-    - name: twitter
-      url: "https://twitter.com/johncodezzz"
-    - name: mastodon
-      url: "https://fosstodon.org/@johnmcbride"
+      url: "https://github.com/Logan-Roelofs"
+    #- name: youtube
+    #  url: "https://youtube.com/c/JohnCodes"
+    #- name: twitter
+    #  url: "https://twitter.com/johncodezzz"
+    #- name: mastodon
+    #  url: "https://fosstodon.org/@johnmcbride"
     - name: linkedin
-      url: "https://linkedin.com/in/jpmcb"
+      url: "www.linkedin.com/in/logan-roelofs"
 
 outputs:
   home:
