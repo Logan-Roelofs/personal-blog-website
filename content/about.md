@@ -2,7 +2,7 @@
 
 ---
 
-# Hi there! 🌊
+# Hi there! 
 
 My name is John & I'm a senior software engineer at [OpenSauced](https://opensauced.pizza)
 where I'm building our backend infrastructure and open source insights tooling.
