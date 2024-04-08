@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title></title>
-    <link>//localhost:1313/</link>
+    <link>//localhost:36931/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 16 Mar 2024 10:00:00 -0600</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:36931/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Editing Astro projects with Neovim</title>
-      <link>//localhost:1313/posts/2024/03-16-config-neovim-for-astro/</link>
+      <link>//localhost:36931/posts/2024/03-16-config-neovim-for-astro/</link>
       <pubDate>Sat, 16 Mar 2024 10:00:00 -0600</pubDate>
-      <guid>//localhost:1313/posts/2024/03-16-config-neovim-for-astro/</guid>
+      <guid>//localhost:36931/posts/2024/03-16-config-neovim-for-astro/</guid>
       <description>Astro is a fast &amp;amp; dynamic web framework designed to be flexible enough for small static websites, blogs, big interactive apps, and more. I&amp;rsquo;ve been interested in checking it out since building silly little static websites that are &amp;ldquo;Content-first&amp;rdquo; is a fun past-time of mine.
 Since Neovim is my main text editor, it took abit of configuration fu to get things up and running.
 Herein is my Astro setup:
@@ -153,9 +153,9 @@ Happy coding!</p>
     </item>
     <item>
       <title>Awk: A beginners guide for humans</title>
-      <link>//localhost:1313/posts/2024/03-03-awk-basics/</link>
+      <link>//localhost:36931/posts/2024/03-03-awk-basics/</link>
       <pubDate>Sun, 03 Mar 2024 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2024/03-03-awk-basics/</guid>
+      <guid>//localhost:36931/posts/2024/03-03-awk-basics/</guid>
       <description>Earlier this week, I had a file of names, each delimited by a newline:
 john jack jill But really, I needed this file to be in the form:
 { &amp;#34;full_name&amp;#34;: &amp;#34;name&amp;#34; }, This file wasn&amp;rsquo;t absolutely huge, but it was big enough that editing it manually would have been annoying. I thought to myself, &amp;ldquo;instead of editing this file manually or generating it correctly, how can I spend the maximum amount of time using a bespoke tool to get it in the right format?</description>
@@ -324,9 +324,9 @@ using <code>BEGIN</code> and <code>END</code>, we print an opening and closing b
     </item>
     <item>
       <title>Job scheduling with tmux</title>
-      <link>//localhost:1313/posts/2024/01-15-tmux-scheduling/</link>
+      <link>//localhost:36931/posts/2024/01-15-tmux-scheduling/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2024/01-15-tmux-scheduling/</guid>
+      <guid>//localhost:36931/posts/2024/01-15-tmux-scheduling/</guid>
       <description>Tmux is one of my favorite utilities: it&amp;rsquo;s a terminal multiplexer that lets you create persistent shell sessions, panes, windows, etc. all within a single terminal. It&amp;rsquo;s a great way to organize your shell sessions and natively give you multi-shell environments to work in without having to rely on a terminal program for those features.
 You&amp;rsquo;d think in a world of modern applications and fancy terminals like iTerm 2 and Kitty, you wouldn&amp;rsquo;t need such a utility.</description>
       <content:encoded><![CDATA[<p>Tmux is one of my favorite utilities: it&rsquo;s a terminal multiplexer
@@ -549,9 +549,9 @@ components of our system organized in a system I know well and can easily wrap m
     </item>
     <item>
       <title>2023 in review</title>
-      <link>//localhost:1313/posts/2024/01-01-in-review/</link>
+      <link>//localhost:36931/posts/2024/01-01-in-review/</link>
       <pubDate>Mon, 01 Jan 2024 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2024/01-01-in-review/</guid>
+      <guid>//localhost:36931/posts/2024/01-01-in-review/</guid>
       <description>I had a huge year.
 And every year, around this time, when I have a well deserved opportunity to take a break and prepare for the next year, I like to reflect: think on the year&amp;rsquo;s accomplishments, derive some lessons learned, and drink in everything from my experiences.
 Herein are my musings and thoughts regarding the last year.
@@ -746,9 +746,9 @@ Good luck in the new year!!</p>
     </item>
     <item>
       <title>4 billion Go if statements</title>
-      <link>//localhost:1313/posts/2023/12-28-4-billon-go-if-statements/</link>
+      <link>//localhost:36931/posts/2023/12-28-4-billon-go-if-statements/</link>
       <pubDate>Thu, 28 Dec 2023 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/12-28-4-billon-go-if-statements/</guid>
+      <guid>//localhost:36931/posts/2023/12-28-4-billon-go-if-statements/</guid>
       <description>I recently read this excellent little bit of programming horror titled: &amp;ldquo;4 billion if statements&amp;rdquo;.
 It chronicles how one could use an insane number of hard coded if statements to check if any given 32 bit number is even or odd. Instead of do this the normal and efficient way with a modulus operator and for loop, hard coding if statements requires some clever meta programming, some custom assembly code, and a nearly 40 GB compiled binary for all the comparisons.</description>
       <content:encoded><![CDATA[<p>I recently read <a href="https://andreasjhkarlsson.github.io/jekyll/update/2023/12/27/4-billion-if-statements.html">this <em>excellent</em> little bit of programming horror</a>
@@ -1121,9 +1121,9 @@ I found there was a tricky soft limit on ints in bash:</p>
     </item>
     <item>
       <title>There is no secure software supply-chain.</title>
-      <link>//localhost:1313/posts/2023/09-02-there-is-no-secure-software-supply-chain/</link>
+      <link>//localhost:36931/posts/2023/09-02-there-is-no-secure-software-supply-chain/</link>
       <pubDate>Sun, 03 Sep 2023 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/09-02-there-is-no-secure-software-supply-chain/</guid>
+      <guid>//localhost:36931/posts/2023/09-02-there-is-no-secure-software-supply-chain/</guid>
       <description>Years ago, entrepreneurs and innovators predicated that “software would eat the world”.
 And to little surprise, year after year, the world has become more and more reliant on software solutions. Often times, that software is (or indirectly depends on) some open source software, maintained by a group of people whose only affiliation to one another may be participation in that open source project’s community.
 But we’re in trouble. The security of open source software is under threat and we’re running out of people to reliably maintain those projects.</description>
@@ -1374,9 +1374,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>On maintaining spf13/cobra</title>
-      <link>//localhost:1313/posts/2023/06-29-on-maintaining-cobra/</link>
+      <link>//localhost:36931/posts/2023/06-29-on-maintaining-cobra/</link>
       <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/06-29-on-maintaining-cobra/</guid>
+      <guid>//localhost:36931/posts/2023/06-29-on-maintaining-cobra/</guid>
       <description>There&amp;rsquo;s something I feel like I need to acknowledge around my maintainership of spf13/cobra.
 During my time at AWS, I had a really hard time contributing to open source projects that were important to me (and important to the broader ecosystem). I didn&amp;rsquo;t have the energy, but more importantly, I didn&amp;rsquo;t have the bandwidth.
 There&amp;rsquo;s alot of red tape to get through when it comes to open source at Amazon. After all, AWS alone is a massive business unit with thousands of products and tens of thousands of engineers all around the world.</description>
@@ -1497,9 +1497,9 @@ or <a href="https://github.com/sponsors/jpmcb">buy me a coffee via GitHub sponso
     </item>
     <item>
       <title>NeoVim: Using the spellchecker</title>
-      <link>//localhost:1313/posts/2023/02-25-nvim-spell/</link>
+      <link>//localhost:36931/posts/2023/02-25-nvim-spell/</link>
       <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/02-25-nvim-spell/</guid>
+      <guid>//localhost:36931/posts/2023/02-25-nvim-spell/</guid>
       <description>I know.
 Any sane person&amp;rsquo;s editor already has spellchecking built in. And enabled by default. But I could never leave my beloved Neovim (and all the muscle memory I&amp;rsquo;ve built) just to spell things correctly! That&amp;rsquo;s why I became a programmer dammit! Who needs to know how to spell correctly when I can have single character variable names! Besides. We have tools. Isn&amp;rsquo;t that what computers are for!? Automate the boring stuff!</description>
       <content:encoded><![CDATA[
@@ -1634,9 +1634,9 @@ Your support means the world to me!!</p>
     </item>
     <item>
       <title>So long windows 7!</title>
-      <link>//localhost:1313/posts/2023/01-14-sat-edition/</link>
+      <link>//localhost:36931/posts/2023/01-14-sat-edition/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/01-14-sat-edition/</guid>
+      <guid>//localhost:36931/posts/2023/01-14-sat-edition/</guid>
       <description>Welcome to the &amp;ldquo;Sunday Edition&amp;rdquo; of my blog. This is my (occasionally) recurring weekly news letter where I highlight some interesting things from across the tech industry, share a few insights from the week, and give you a chance to catch up on some worth-while reads from around the internet.
 If you&amp;rsquo;d like to subscribe via RSS and receive new posts, you can find the atom feed here.
 News Microsoft ended long term support for Windows 7 this week.</description>
@@ -1719,9 +1719,9 @@ alias escape for zsh, bash, etc.</p>
     </item>
     <item>
       <title>Leaky Go Channels</title>
-      <link>//localhost:1313/posts/legacy/golang-performance/</link>
+      <link>//localhost:36931/posts/legacy/golang-performance/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/legacy/golang-performance/</guid>
+      <guid>//localhost:36931/posts/legacy/golang-performance/</guid>
       <description>These simple go tests check the &amp;ldquo;leaky-ness&amp;rdquo; of using channels in Go. There are two methods described here; one using both a local context, and the parent context. When tests are run against both, the LeakyAsync method runs faster, but fails the leak checker as goroutines are not resolved or cleaned up.
 In a production system with possibly thousands of go routines being spun up, this could result in massive memory leaks and a deadlock situation in the go binary.</description>
       <content:encoded><![CDATA[<p>These simple go tests check the &ldquo;leaky-ness&rdquo; of using channels in Go.
@@ -1921,9 +1921,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>Slack Is Always Watching ...</title>
-      <link>//localhost:1313/posts/legacy/slack-is-watching/</link>
+      <link>//localhost:36931/posts/legacy/slack-is-watching/</link>
       <pubDate>Mon, 21 Jan 2019 21:18:06 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/slack-is-watching/</guid>
+      <guid>//localhost:36931/posts/legacy/slack-is-watching/</guid>
       <description>(Note: this is from a blog archieve dated 2019/01/21. These opinions are my own and the slack API may have changed) TLDR: The Slack API exposes endpoints for a token holder to read all public and private messages.
 In today&amp;rsquo;s world, violations of privacy are no surprise. Between all the leaks and data dumps, many people have accepted this as &amp;ldquo;just the world we live in&amp;rdquo;. But what if information was exposed that could be used to judge your work performance?</description>
       <content:encoded><![CDATA[<p>(Note: this is from a blog archieve dated 2019/01/21. These opinions are my own and the slack API may have changed)
@@ -2007,9 +2007,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>To Catch a Hacker - NPM Even Stream</title>
-      <link>//localhost:1313/posts/legacy/npm-event-stream/</link>
+      <link>//localhost:36931/posts/legacy/npm-event-stream/</link>
       <pubDate>Fri, 14 Dec 2018 21:20:46 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/npm-event-stream/</guid>
+      <guid>//localhost:36931/posts/legacy/npm-event-stream/</guid>
       <description>(Note: this post is from a legacy blog dated 12/14/2018 and some content or links may have changed)
 A few weeks ago, this issue was opened on a popular Node NPM package called Event Stream. This package enables Node streams to be simpler and streamlines many I/O operations within Node. Regardless, this package is a key dependency for many other Node packages and has over 1 million downloads per week from NPM.</description>
       <content:encoded><![CDATA[<p>(Note: this post is from a legacy blog dated 12/14/2018 and some content or links may have changed)</p>
@@ -2208,9 +2208,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>Rethink-DB Cookbook</title>
-      <link>//localhost:1313/posts/legacy/rethink-db-cookbook/</link>
+      <link>//localhost:36931/posts/legacy/rethink-db-cookbook/</link>
       <pubDate>Mon, 05 Nov 2018 21:15:35 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/rethink-db-cookbook/</guid>
+      <guid>//localhost:36931/posts/legacy/rethink-db-cookbook/</guid>
       <description>(Note: this is from an old blog archieve dating 2018/11/05. Some things with Rethink have very likely changed) RethinkDB is a JSON based, non-relational database that provides a promise oriented, Node JS backend. It integrates seamlessly with JSON type data and is a production ready option for Node infrastructures.
 Pre-reqs: Docker, Node, NPM
 This post will serve as a brief overview of RethinkDB and hopefully give you a taste of how it works and why a JSON based database might be beneficial for you and your product.</description>
@@ -2367,9 +2367,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>Virtual machine trouble?? Try Docker!</title>
-      <link>//localhost:1313/posts/legacy/docker-trouble/</link>
+      <link>//localhost:36931/posts/legacy/docker-trouble/</link>
       <pubDate>Sat, 13 May 2017 22:17:04 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/docker-trouble/</guid>
+      <guid>//localhost:36931/posts/legacy/docker-trouble/</guid>
       <description>If you are a Oregon State CS 344 student, then you&amp;rsquo;ve been told to develop exclusively on the OS1 server. Unfortunately, this server is frequently nuked by fork bombs. If you are unable to run a full CentOS virtual machine, then here is a step by step guide to getting a CentOS docker container running on your computer. This way, you can continue to work on your assignments in a similar environment to OS1 and not have to have a full virtual machine running!</description>
       <content:encoded><![CDATA[<p>If you are a Oregon State CS 344 student, then you&rsquo;ve been told to develop exclusively on the OS1 server. Unfortunately, this server is frequently nuked by fork bombs. If you are unable to run a full CentOS virtual machine, then here is a step by step guide to getting a CentOS docker container running on your computer. This way, you can continue to work on your assignments in a similar environment to OS1 and not have to have a full virtual machine running!</p>
 <p><em><em>Note:</em></em> when a &ldquo;host&rdquo; is referenced, this is in regard to your own laptop and your own environment, not any container or virtual machine you might have running.</p>
@@ -2482,9 +2482,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>Vim Tips!</title>
-      <link>//localhost:1313/posts/legacy/vim-tips/</link>
+      <link>//localhost:36931/posts/legacy/vim-tips/</link>
       <pubDate>Wed, 22 Mar 2017 21:19:16 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/vim-tips/</guid>
+      <guid>//localhost:36931/posts/legacy/vim-tips/</guid>
       <description>(Note: this is a post from a legacy blog. This post was intended to help new OSU students get started with Vim)
 I&amp;rsquo;d consider myself some sort of Vim - evangelist. It&amp;rsquo;s an incredible tool and has ALOT of power. If there&amp;rsquo;s something you wish Vim could do, there&amp;rsquo;s probably a plugin for it or a way to make Vim do it with scripting (in its own language!). Moderate proficiency in Vim is a skill that nearly every developer could benefit from.</description>
       <content:encoded><![CDATA[<p>(Note: this is a post from a legacy blog. This post was intended to help new OSU students get started with Vim)</p>
@@ -2642,9 +2642,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/about/</link>
+      <link>//localhost:36931/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/about/</guid>
+      <guid>//localhost:36931/about/</guid>
       <description>Hi there! My name is John &amp;amp; I&amp;rsquo;m a senior software engineer at OpenSauced where I&amp;rsquo;m building our backend infrastructure and open source insights tooling.
 In the past, I&amp;rsquo;ve worked at AWS, VMware, &amp;amp; Pivotal Cloud Foundry where I worked on open source software, observability &amp;amp; SRE tooling, Kubernetes, Linux operating systems, and cloud technologies.
 This site is my personal landing page and blog. You&amp;rsquo;ll find all kinds of stuff here: stuff about tech, short stories, long-form essays, photos, music, videos, ramblings on philosophy, and really, whatever I want (it&amp;rsquo;s my website after all).</description>
@@ -2671,9 +2671,9 @@ Use it to send me secret messages or verify my identity online.</p>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/interview-prep/</link>
+      <link>//localhost:36931/interview-prep/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/interview-prep/</guid>
+      <guid>//localhost:36931/interview-prep/</guid>
       <description>The No Nonsense Interview Prep The following is interview preperation material for software engineer and development roles that covers the most common aspects of data structures, algorithms, design, and behavioral.
 This interview manual is ever evolving; I make changes to it frequently as my experience grows and I find new resources.
 Python Crash Course But why Python? Basic operations Data structures Arrays Python Crash Course The following is a crash course in Python that I&amp;rsquo;ve used to refresh my knowledge and understanding of the langauge from a high level.</description>
@@ -2810,9 +2810,9 @@ and reduces the overall complexity of your technical interview.</p>
     </item>
     <item>
       <title></title>
-      <link>//localhost:1313/talks/</link>
+      <link>//localhost:36931/talks/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/talks/</guid>
+      <guid>//localhost:36931/talks/</guid>
       <description>Talks Inquires: talks@johncodes.com
 2023 Kubecon NA: Hacking the Kubernetes Secure Software Supply-chain with .zip Domains Neovim Conf 2023: Introducing nvim-llama PancakesCon 4: Containers, Hardening Against Escapes, and Funk Bass 2022 KubeCon EU: The Risks of Single Maintainer Dependencies Business of Open Source: Exploring the Risks of Single Maintainer Dependencies with John McBride NeovimConf 2022: Lua, A Primer Deserted Island DevOps 2022: Distributed Shared Team Configurations With Oh-My-Zsh 2023 Kubecon NA: Hacking the Kubernetes Secure Software Supply-chain with .</description>
       <content:encoded><![CDATA[<h1 id="talks">Talks</h1>
