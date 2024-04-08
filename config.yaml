@@ -1,0 +1,89 @@
+baseURL: ''
+languageCode: 'en-us'
+title: 'John McBride'
+paginate: 5
+theme: 'PaperMod'
+
+markup:
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 2
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: Writing
+          url: archives
+          weight: 1
+        - name: RSS
+          url: index.xml
+          weight: 2
+        - name: Talks
+          url: talks/
+          weight: 3
+        - name: Search
+          url: search/
+          weight: 4
+        - name: About
+          url: about
+          weight: 5
+
+# home-info mode
+params:
+  ShowFullTextinRSS: true
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: John-McBride
+  description: ""
+  keywords: [Blog, Software Engineer, Software Developer blog, Software developer]
+  #author: John McBride
+  DateFormat: "January 2, 2006"
+  defaultTheme: "dark"
+  disableThemeToggle: false
+  ShowReadingTime: false
+  ShowCodeCopyButtons: true
+
+  # Home profile mode
+  profileMode:
+    enabled: true
+    title: John McBride
+    subtitle: "Sr Software Engineer @ OpenSauced."
+    imageUrl: "images/profile-pic.jpg"
+    imageWidth: 200
+    imageHeight: 200
+    imageTitle: "this is john mcbride"
+  socialIcons:
+    - name: email
+      url: "mailto:hello.john.codes@gmail.com"
+    - name: rss
+      url: "https://johncodes.com/index.xml"
+    - name: github
+      url: "https://github.com/jpmcb"
+    - name: youtube
+      url: "https://youtube.com/c/JohnCodes"
+    - name: twitter
+      url: "https://twitter.com/johncodezzz"
+    - name: mastodon
+      url: "https://fosstodon.org/@johnmcbride"
+    - name: linkedin
+      url: "https://linkedin.com/in/jpmcb"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary for RSS feed, hugo metadata, etc.
