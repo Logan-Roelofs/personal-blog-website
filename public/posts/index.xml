@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on John McBride</title>
-    <link>//localhost:1313/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on John McBride</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 16 Mar 2024 10:00:00 -0600</lastBuildDate>
-    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Editing Astro projects with Neovim</title>
-      <link>//localhost:1313/posts/2024/03-16-config-neovim-for-astro/</link>
+      <link>/posts/2024/03-16-config-neovim-for-astro/</link>
       <pubDate>Sat, 16 Mar 2024 10:00:00 -0600</pubDate>
-      <guid>//localhost:1313/posts/2024/03-16-config-neovim-for-astro/</guid>
+      <guid>/posts/2024/03-16-config-neovim-for-astro/</guid>
       <description>Astro is a fast &amp;amp; dynamic web framework designed to be flexible enough for small static websites, blogs, big interactive apps, and more. I&amp;rsquo;ve been interested in checking it out since building silly little static websites that are &amp;ldquo;Content-first&amp;rdquo; is a fun past-time of mine.
 Since Neovim is my main text editor, it took abit of configuration fu to get things up and running.
 Herein is my Astro setup:
@@ -153,9 +153,9 @@ Happy coding!</p>
     </item>
     <item>
       <title>Awk: A beginners guide for humans</title>
-      <link>//localhost:1313/posts/2024/03-03-awk-basics/</link>
+      <link>/posts/2024/03-03-awk-basics/</link>
       <pubDate>Sun, 03 Mar 2024 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2024/03-03-awk-basics/</guid>
+      <guid>/posts/2024/03-03-awk-basics/</guid>
       <description>Earlier this week, I had a file of names, each delimited by a newline:
 john jack jill But really, I needed this file to be in the form:
 { &amp;#34;full_name&amp;#34;: &amp;#34;name&amp;#34; }, This file wasn&amp;rsquo;t absolutely huge, but it was big enough that editing it manually would have been annoying. I thought to myself, &amp;ldquo;instead of editing this file manually or generating it correctly, how can I spend the maximum amount of time using a bespoke tool to get it in the right format?</description>
@@ -324,9 +324,9 @@ using <code>BEGIN</code> and <code>END</code>, we print an opening and closing b
     </item>
     <item>
       <title>Job scheduling with tmux</title>
-      <link>//localhost:1313/posts/2024/01-15-tmux-scheduling/</link>
+      <link>/posts/2024/01-15-tmux-scheduling/</link>
       <pubDate>Mon, 15 Jan 2024 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2024/01-15-tmux-scheduling/</guid>
+      <guid>/posts/2024/01-15-tmux-scheduling/</guid>
       <description>Tmux is one of my favorite utilities: it&amp;rsquo;s a terminal multiplexer that lets you create persistent shell sessions, panes, windows, etc. all within a single terminal. It&amp;rsquo;s a great way to organize your shell sessions and natively give you multi-shell environments to work in without having to rely on a terminal program for those features.
 You&amp;rsquo;d think in a world of modern applications and fancy terminals like iTerm 2 and Kitty, you wouldn&amp;rsquo;t need such a utility.</description>
       <content:encoded><![CDATA[<p>Tmux is one of my favorite utilities: it&rsquo;s a terminal multiplexer
@@ -549,9 +549,9 @@ components of our system organized in a system I know well and can easily wrap m
     </item>
     <item>
       <title>2023 in review</title>
-      <link>//localhost:1313/posts/2024/01-01-in-review/</link>
+      <link>/posts/2024/01-01-in-review/</link>
       <pubDate>Mon, 01 Jan 2024 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2024/01-01-in-review/</guid>
+      <guid>/posts/2024/01-01-in-review/</guid>
       <description>I had a huge year.
 And every year, around this time, when I have a well deserved opportunity to take a break and prepare for the next year, I like to reflect: think on the year&amp;rsquo;s accomplishments, derive some lessons learned, and drink in everything from my experiences.
 Herein are my musings and thoughts regarding the last year.
@@ -746,9 +746,9 @@ Good luck in the new year!!</p>
     </item>
     <item>
       <title>4 billion Go if statements</title>
-      <link>//localhost:1313/posts/2023/12-28-4-billon-go-if-statements/</link>
+      <link>/posts/2023/12-28-4-billon-go-if-statements/</link>
       <pubDate>Thu, 28 Dec 2023 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/12-28-4-billon-go-if-statements/</guid>
+      <guid>/posts/2023/12-28-4-billon-go-if-statements/</guid>
       <description>I recently read this excellent little bit of programming horror titled: &amp;ldquo;4 billion if statements&amp;rdquo;.
 It chronicles how one could use an insane number of hard coded if statements to check if any given 32 bit number is even or odd. Instead of do this the normal and efficient way with a modulus operator and for loop, hard coding if statements requires some clever meta programming, some custom assembly code, and a nearly 40 GB compiled binary for all the comparisons.</description>
       <content:encoded><![CDATA[<p>I recently read <a href="https://andreasjhkarlsson.github.io/jekyll/update/2023/12/27/4-billion-if-statements.html">this <em>excellent</em> little bit of programming horror</a>
@@ -1121,9 +1121,9 @@ I found there was a tricky soft limit on ints in bash:</p>
     </item>
     <item>
       <title>There is no secure software supply-chain.</title>
-      <link>//localhost:1313/posts/2023/09-02-there-is-no-secure-software-supply-chain/</link>
+      <link>/posts/2023/09-02-there-is-no-secure-software-supply-chain/</link>
       <pubDate>Sun, 03 Sep 2023 09:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/09-02-there-is-no-secure-software-supply-chain/</guid>
+      <guid>/posts/2023/09-02-there-is-no-secure-software-supply-chain/</guid>
       <description>Years ago, entrepreneurs and innovators predicated that “software would eat the world”.
 And to little surprise, year after year, the world has become more and more reliant on software solutions. Often times, that software is (or indirectly depends on) some open source software, maintained by a group of people whose only affiliation to one another may be participation in that open source project’s community.
 But we’re in trouble. The security of open source software is under threat and we’re running out of people to reliably maintain those projects.</description>
@@ -1373,176 +1373,10 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
 ]]></content:encoded>
     </item>
     <item>
-      <title>Prestige Over Influence: Choosing A More Impactful Online Presence</title>
-      <link>//localhost:1313/posts/2023/08-11-prestige/</link>
-      <pubDate>Fri, 11 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/08-11-prestige/</guid>
-      <description>The world of software engineering influencers, what I typically like to refer to as &amp;ldquo;tech-fluencers&amp;rdquo;, has grown significantly in the last few years. There are people who have built entire personal brands and businesses solely on the basis of their online tech content. And many massive technology companies now participate in the same spheres that 5 years ago would have been unheard of (just think about all the memes major tech companies have created in the last few years).</description>
-      <content:encoded><![CDATA[<p>The world of software engineering influencers, what I typically like to refer to
-as &ldquo;tech-fluencers&rdquo;, has grown significantly in the last few years. There are
-people who have built entire personal brands and businesses solely on the basis
-of their online tech content. And many massive technology companies now
-participate in the same spheres that 5 years ago would have been unheard of
-(just think about all the memes major tech companies have created in the last
-few years).</p>
-<p>And with the rise of platforms that promote short form video content, like
-TikTok and YouTube shorts, it&rsquo;s now easier then ever to build branding and
-create a catalog of niche content designed to fulfill a void somewhere out
-there on the internet.</p>
-<p>But I&rsquo;ve seen a big problem with all of this.</p>
-<p>We often see others with significant reach in online tech spaces and assume
-that the only way to achieve that kind of corporate success, financial
-well-being, confidence, seniority status, or whatever else their persona
-amplifies, is to emulate them and make content to also achieve that reach,
-success, and influence in the industry.</p>
-<p>From my first hand experience, this is simply not true.</p>
-<p>Years ago, I fell into the mental trap of creating tech content online: partly
-out of boerdum during the pandemic and partly because I was looking for new
-ways to level up my career. I thought that creating content online, like I saw
-so many other people doing, would be an accelerator for me. I started a TikTok
-account. During it&rsquo;s heyday, the account reached over 140 thousands followers. This lead to
-a YouTube channel, a Twitch stream, daily content generation, and much more.</p>
-<p>And honestly, after hundreds and hundreds of videos, none of it really sticks
-out as actually being significant to my career. After all, most of it was fluff
-and memes without alot of sustenance.</p>
-<p>This is the trap of content creation that is all too tantalizing:
-maybe start with pure intent but eventually find yourself feeding the
-algorithms a never ending stream of content for the hopes of achieving some
-amorphous goal that has bastardized into something you don&rsquo;t recognize anymore.</p>
-<p>I eventually took a big step back from the content creator grind and ultimately
-felt pretty disappointed in what seemed like a huge wasted effort.</p>
-<p>I think Will Larson sums this all up incredibly well in his piece
-<a href="https://lethain.com/tech-influencer/">&ldquo;How to be a tech influencer&rdquo;</a>. He says:</p>
-<blockquote>
-<p><em>Most successful people are not well-known online.</em> If you participate
-frequently within social media, it’s easy to get sucked into the reality
-distortion field it creates. Being well-known in an online community feels
-equivalent to professional credibility when you’re spending a lot of time in
-that community. My experience is that very few of the most successful folks I
-know are well-known online, and many of the most successful folks I know don’t
-create content online at all.</p>
-</blockquote>
-<hr>
-<p>Instead, there is an alternative approach: prestige.</p>
-<p>Building a long term, successful tech career is not about having large
-followings in online tech spaces or massive engagement on content. Chasing
-those metrics will only lead you down that road of churning out content for the
-sake of staying relevant in whatever algorithm you&rsquo;re participating in.</p>
-<p>No, one of the many puzzle pieces in building a fruitful tech career involves
-building prestige.</p>
-<p>Prestige is the &ldquo;idea&rdquo; of someone and is based on the respect for the things
-achieved, battles won, and quality of their character.</p>
-<p>When I was at AWS, I could tell who the prestigious engineers were based on the
-way other people talked about them, how others approached that person&rsquo;s code,
-and how that person could command a room. Prestige is easy to see, difficult to
-measure, and illusive to obtain.</p>
-<p>Don&rsquo;t be mistaken: you may read that and assume prestige and fear are close
-neighbors. But prestige is not about control, making others do what you want,
-or power. Prestige on one hand is about gaining other&rsquo;s respect.
-But on the other, it&rsquo;s about having self respect, owning your mistakes,
-being humble, kindness, and above all, keeping yourself accountable to the
-high bar of quality and character that you hold for yourself.</p>
-<p>Measuring your prestige is much more difficult than tracking your influence.
-It&rsquo;s easy to see the number of followers on your online accounts go up, but
-tracking the respect and repute people have for you is a whole different
-challenge.</p>
-<p>This can make attempting to generate prestige difficult. How can I drum up
-respect and prestige for myself across the industry if I can&rsquo;t really measure it
-effectively?</p>
-<p>Ironically, generating prestige with online content can be a very successful way
-to go about amplifying your existing reputation. Experimenting with different
-forms of content and distribution models is important, but I want to stress
-that creating content to amplify your prestige should not be the same as content
-creation (at least in the typical, 2023 sense). You should not fall prey to the
-temptations of algorithms designed to steal your attention and sap your creative
-energy. You should simply use them as a tool of distribution if necessary.</p>
-<p>But more importantly, the quality of your content matters significantly more
-than the quantity. Typical social media influence dictates that you must post
-on a regular schedule. But for the engineering leader looking to grow their
-prestige, one or two extremely high quality pieces go a very very long way.
-It&rsquo;s not necessary that you always be chugging out content since relevance in
-typical social media algorithms should not be your end goal.</p>
-<p>So, how do you actually go about building prestige? Here are my 5 approaches to
-growing your prestige within your engineering organization and online:</p>
-<h3 id="1-invent">1. Invent</h3>
-<p>You should be finding ways to solve big technical problems that have increasing
-impact and that grow your status within the engineering org.</p>
-<p>This should really be the prerequisite to building any sort of prestige. But it
-may not be obvious to all: it can be easy to get stuck in a loop of finishing
-tickets and completing all your tasks during a sprint without expanding into
-more challenging territories.</p>
-<p>But if you&rsquo;re not finding technical problems to solve that require innovation,
-expertise, and abit of the inventors mindset, you&rsquo;ll eventually hit a career
-ceiling.</p>
-<p>It is possible to build prestige without inventing. You can get pretty good at
-taking credit for others work or faking it till you make it. But eventually,
-this catches up with you and you reach a point where your persona is hollow and
-it&rsquo;s clear the achievements where your reputation is build upon can&rsquo;t be trusted or
-respected.</p>
-<p>Inventing, building, and solving increasingly challenging technical problems is
-the backbone of building any kind of technical prestige.</p>
-<h3 id="2-newsletters">2. Newsletters</h3>
-<p>Internal newsletters to your organization are a great way to communicate what
-you&rsquo;re doing, what you&rsquo;ve invented, and brag abit about some of your technical
-achievements.</p>
-<p>For some, this may seem too out of reach. Aren&rsquo;t these types of newsletters
-within my company only for VPs and engineering leaders?</p>
-<p>Not necessarily. An opt-in type newsletter is the best place to start (i.e.
-don&rsquo;t start a newsletter and send it to everyone in the company). Your manager
-and other teammates will likely want to opt in. After all, why wouldn&rsquo;t they
-want a regular email of what you&rsquo;ve been working on, things that interest you,
-and pieces of work you&rsquo;re particularly proud of that week?</p>
-<p>Newsletters are also a great habit to be in since they force you to quantify
-and qualify your work on a regular cadence which can then be translated latter
-into talks, deep dives, promotion documents, or other content that you can share
-with your org or the wider world.</p>
-<p>Some people take this to the next level and publish a public newsletter. This
-can be a really cool avenue for those working &ldquo;in public&rdquo; and can be a great
-way to start connecting with other technical leaders out in the industry.</p>
-<h3 id="3-talks">3. Talks</h3>
-<p>Technical talks come in many different shapes and sizes. I would consider a
-&ldquo;talk&rdquo; to be anythying from showing something off during your team weekly demos
-all the way up to international keynotes at large conferences.</p>
-<p>The different ends of that spectrum obviously have different levels of reach
-and impact, but both help to establish you as a subject area expert in that
-thing you&rsquo;re talking about. It&rsquo;s an automatic way to gain some prestige about
-the topic and it&rsquo;ll likely open you up to connecting with others in the
-audience that may lead to further opportunities (as the wheels of prestige go
-round)!</p>
-<h3 id="4-deep-dives">4. Deep dives</h3>
-<p>Technical deep dives also come in many shapes and forms. It may be a written
-piece (like this!), a video, a seminar, or really anything that can deeply
-communicate a technical topic.</p>
-<p>Deep dives are great for generating some prestige since they can be easily
-referenced latter. They sort of end up being a time machine for you to use and
-recycle in powerful ways. I&rsquo;ve seen people take deep dives and turn them into
-conference talks, business pitches, and even entire products!</p>
-<p>But they are ultimately useful for establishing your expertise and prowess in a
-given technical matter.</p>
-<h3 id="5-get-others-to-talk-about-it">5. Get others to talk about it</h3>
-<p>The most powerful, and maybe most difficult avenue to building prestige, is to
-get other people to talk about you and your work. At this point, the wheels of
-prestige are fully turning and they will move on their own for a fair amount
-of time.</p>
-<p>Having a wealth of talks, deep dives, and newsletters ensures that other people
-(like your boss or your co-workers) have something to talk about.</p>
-<p>And remember, prestige holds you to the highest bar of quality. So at this
-point, regardless of how many years it&rsquo;s been, you can be assured that if
-people are talking about you, discussing a talk you gave, or chatting about
-something you&rsquo;ve achieved, you know that it&rsquo;s something that you can be proud
-of and respect yourself for.</p>
-<hr>
-<p>Prestige is an incredible tool to build within your engineering organization and
-out in public. It should be a good approach for anyone looking to really
-leveling up their career. And in my experience, it&rsquo;s a much preferred method to
-the typical &ldquo;tech-fluencers&rdquo; content grind.</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>On maintaining spf13/cobra</title>
-      <link>//localhost:1313/posts/2023/06-29-on-maintaining-cobra/</link>
+      <link>/posts/2023/06-29-on-maintaining-cobra/</link>
       <pubDate>Thu, 29 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/06-29-on-maintaining-cobra/</guid>
+      <guid>/posts/2023/06-29-on-maintaining-cobra/</guid>
       <description>There&amp;rsquo;s something I feel like I need to acknowledge around my maintainership of spf13/cobra.
 During my time at AWS, I had a really hard time contributing to open source projects that were important to me (and important to the broader ecosystem). I didn&amp;rsquo;t have the energy, but more importantly, I didn&amp;rsquo;t have the bandwidth.
 There&amp;rsquo;s alot of red tape to get through when it comes to open source at Amazon. After all, AWS alone is a massive business unit with thousands of products and tens of thousands of engineers all around the world.</description>
@@ -1662,149 +1496,10 @@ or <a href="https://github.com/sponsors/jpmcb">buy me a coffee via GitHub sponso
 ]]></content:encoded>
     </item>
     <item>
-      <title>So long AWS! Hello OpenSauced!</title>
-      <link>//localhost:1313/posts/2023/06-13-goodbye-aws/</link>
-      <pubDate>Tue, 13 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/06-13-goodbye-aws/</guid>
-      <description>This is my last week at Amazon Web Services.
-And while the last year has been an incredible journey diving deep into the world of containers, Linux, Rust, Kubernetes, and building operating systems, I&amp;rsquo;ve made the difficult decision to leave.
-And I&amp;rsquo;m very excited to be joining the incredible team at OpenSauced where we&amp;rsquo;ll be building the future of open source insights, tooling, and innovation.
-Since before I started my computer science degree (almost 7 years ago!</description>
-      <content:encoded><![CDATA[<p>This is my last week at Amazon Web Services.</p>
-<p>And while the last year has been an incredible journey diving deep into the world
-of containers, Linux, Rust, Kubernetes, and building operating systems,
-I&rsquo;ve made the difficult decision to leave.</p>
-<p>And I&rsquo;m very excited to be joining the incredible team at <a href="https://opensauced.pizza/">OpenSauced</a>
-where we&rsquo;ll be building the future of open source insights, tooling, and innovation.</p>
-<p>Since before I started my computer science degree (almost 7 years ago!)
-I&rsquo;ve wanted to cut my teeth on building a startup and working on a greenfield product.
-These kinds of opportunities are far &amp; few between.
-And the timing is <em>just about</em> right;
-I can&rsquo;t wait to push myself, learn new skills, and build new products
-with a small, amazing tactical team.</p>
-<p>To everyone at AWS and the Bottlerocket team:
-Thank you for making the last year an incredible learning opportunity.
-Here&rsquo;s hoping our paths cross again soon!! I&rsquo;m sure I&rsquo;ll be seeing you around
-the open source ecosystem! Cheers!</p>
-<hr>
-<p>If you&rsquo;re curious, here are a few personal reflections on the last year:</p>
-<h3 id="the-power-of-grit"><em><strong>The power of grit.</strong></em></h3>
-<p>There&rsquo;s something really incredible about a team of engineers dedicated to
-creating wonderful customer experiences
-(especially when there is alot of really challenging work to get done).</p>
-<p>You could have the most talented people in the world working on your products
-but when the times get tough, tapping into the grit superpower trumps all others.</p>
-<p>What is grit?</p>
-<p>Personally, I&rsquo;ve found it to be the <em>resolve</em> to do what needs to get done.
-At times, no matter what.</p>
-<p>I was constantly impressed with what could be accomplished at AWS through sheer
-motivation and grit. It was pretty rare to hear <em>&ldquo;it can&rsquo;t be done&rdquo;</em> or <em>&ldquo;I can&rsquo;t do this&rdquo;</em>.
-More often then not, you&rsquo;d hear <em>&ldquo;how can we do this for our customers?&rdquo;</em>
-or <em>&ldquo;what needs to change in order to accomplish this&rdquo;</em>.</p>
-<h3 id="the-open-source-movement-is-alive-and-well"><em><strong>The open source movement is alive and well.</strong></em></h3>
-<p>Just before joining Amazon, I was coming hot off of
-Tanzu Community Edition at VMware, an open source Kubernetes platform aiming to
-be a simple and easy entry point for VMware customers to get introduced to the cloud
-native ecosystem.</p>
-<p>Unfortunately, sometime after the Broadcom acquisition was announced, the entire
-project was scrapped. After well over a year of stealth development, user research,
-release, community support, and more, all our effort essentially resulted in &hellip; nothing.</p>
-<p>To say the least, it left me abit skeptical (and sad) about the whole open source
-<em>&ldquo;idea&rdquo;</em>. Maybe you could call it a crisis of faith. Did it really make sense
-to ship software and platforms for free? Does it make for any kind of sustainable
-business?</p>
-<p>But while at AWS, I saw amazing projects get iterated on,
-injected with critical engineering resources,
-shipped,
-and improved through Amazon&rsquo;s open source
-office. Things like
-Bottlerocket,
-Containerd,
-Finch,
-and many more.</p>
-<p>To say the least, the open source movement is strong and there&rsquo;s so much
-awesome innovation happening out in the open wild.
-I&rsquo;m energized and hopeful for the future of the free <em>(as in freedom, not as in beer)</em>
-and open movement.</p>
-<h3 id="when-customers-give-you-lemons-make-lemonade"><em><strong>When customers give you lemons, make lemonade.</strong></em></h3>
-<p>The &ldquo;first principle&rdquo; of working at Amazon is to be customer obsessed.
-And being customer obsessed means you should make all efforts to work backwards
-from the customer needs.</p>
-<p>I&rsquo;m not gonna lie: at first, I really thought the whole &ldquo;peculiar culture&rdquo; and
-&ldquo;customer obsessed&rdquo; mantras were a load of b.s.</p>
-<p>But seeing real customer&rsquo;s needs get met on a daily basis by the team was a pretty
-incredible thing: there was little question on what the team was delivering and why.
-It always revolved around the customers.</p>
-<p>From an individual contributor perspective, that is incredibly empowering to be able
-to hear of a real customer issue or need, make changes to address it, and ship it without question.
-In software, customer needs, request, and issues are like lemons.
-And when you have an abundance of lemons, make lemonade.</p>
-<h3 id="want-to-be-understood-write-a-document"><em><strong>Want to be understood? Write a document.</strong></em></h3>
-<p>Before working at Amazon,
-I really, <em>really</em> underestimated the power of technical writing.</p>
-<p>Almost all decisions at Amazon get made through a well written document that
-clearly lays out the narrative for how a decision should be made.</p>
-<p>Writing has never been something I felt <em>&ldquo;good&rdquo;</em> at.
-In fact, for years throughout primary school, I struggled with reading
-and writing <em>(see my previous post on using the spell checker in Neovim for
-an understanding on how critical these tools are for me)</em>.</p>
-<p>The first few docs I wrote were not well written docs (party because of how much
-I underestimated how important writing is).</p>
-<p>So, one of my biggest goals in 2023 became to become a better writer. Part of that
-has been writing on this blog.
-But more importantly, my <em>&ldquo;goal within a goal&rdquo;</em> was to be better understood,
-more organized with my thoughts, and in the end, be a better engineer.</p>
-<p>Don&rsquo;t underestimate the power of writing: it&rsquo;s how you communicate technical
-ideas.</p>
-<h3 id="make-it-boring-making-it-scale-make-the-right-decision"><em><strong>Make it boring. Making it scale. Make the right decision.</strong></em></h3>
-<p>New, sexy tech often gets in the way of building great customer products.</p>
-<p>Amazon (maybe notoriously?) doesn&rsquo;t adopt new tech fast. And for good reason:
-there are droves of engineers and existing stacks that couldn&rsquo;t possibly scale
-to adopt new tech constantly.</p>
-<p>And what customer needs is all this new tech really servicing?
-If we already have well understood tools and stacks, why adopt something new
-unless it really meets some customer need? <em>(see above on working backwards from the customer)</em>.</p>
-<p>Early on, the Bottlerocket team adopted Rust for first party source code. And
-for very good reasons: it provides unique memory safe capabilities and performance, there was an
-existing paradigm of using rust at AWS, and among many other reasons,
-writing new C or C++ systems code may not be unacceptable from a security standpoint.</p>
-<p>When I first arrived on the team, my naive assumption for why Rust was adopted
-was because it happens to be the cool new kid on the programming block.</p>
-<p>When, in reality, adopting this new tech serviced some real customer and product needs.
-In short, keeping the customer at the center of all decisions, including what tech gets adopted,
-will continue to give you better and better results.</p>
-<hr>
-<p><em>So long AWS, and thanks for everything!</em></p>
-<hr>
-<p>If you found this blog post valuable, comment below,
-<a href="https://johncodes.com/index.xml">subscribe to future posts via RSS</a>,
-or <a href="https://github.com/sponsors/jpmcb">buy me a coffee via GitHub sponsors.</a>
-Your support means the world to me!!</p>
-<hr>
-<script src="https://giscus.app/client.js"
-        data-repo="jpmcb/blog"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkxMTYxODMyNjg="
-        data-category="Blog comments"
-        data-category-id="DIC_kwDOBuzQ5M4CTbHW"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="dark_dimmed"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-]]></content:encoded>
-    </item>
-    <item>
       <title>NeoVim: Using the spellchecker</title>
-      <link>//localhost:1313/posts/2023/02-25-nvim-spell/</link>
+      <link>/posts/2023/02-25-nvim-spell/</link>
       <pubDate>Sat, 25 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/02-25-nvim-spell/</guid>
+      <guid>/posts/2023/02-25-nvim-spell/</guid>
       <description>I know.
 Any sane person&amp;rsquo;s editor already has spellchecking built in. And enabled by default. But I could never leave my beloved Neovim (and all the muscle memory I&amp;rsquo;ve built) just to spell things correctly! That&amp;rsquo;s why I became a programmer dammit! Who needs to know how to spell correctly when I can have single character variable names! Besides. We have tools. Isn&amp;rsquo;t that what computers are for!? Automate the boring stuff!</description>
       <content:encoded><![CDATA[
@@ -1938,145 +1633,10 @@ Your support means the world to me!!</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>An elegant social media network for a more civilized age.</title>
-      <link>//localhost:1313/posts/2023/01-28-the-joy-of-mastodon/</link>
-      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/01-28-the-joy-of-mastodon/</guid>
-      <description>&amp;ldquo;This is the social media network of a software engineer. Not as clumsy or random as Twitter; an elegant network for a more civilized age.&amp;rdquo; ― obi-wan kenobi
-Over the last week, I&amp;rsquo;ve abandoned my Twitter account in favor of diving head first into the world of Mastodon and the &amp;ldquo;Fediverse&amp;rdquo;. So far, it&amp;rsquo;s been a surprising, delightful, and enriching experience.
-By the time I moved to Mastodon, I had some 3,000 followers on Twitter.</description>
-      <content:encoded><![CDATA[<p><img loading="lazy" src="/images/lite-saber-meme.png" alt="Mastodon, an elegant social media network"  />
-</p>
-<p><em>&ldquo;This is the social media network of a software engineer.
-Not as clumsy or random as Twitter; an elegant network for a more civilized age.&rdquo; ― obi-wan kenobi</em></p>
-<hr>
-<p>Over the last week, I&rsquo;ve abandoned my Twitter account
-in favor of diving head first into the world of Mastodon and the <em>&ldquo;Fediverse&rdquo;</em>.
-So far, it&rsquo;s been a surprising, delightful, and enriching experience.</p>
-<p>By the time I moved to Mastodon,
-I had some <em>3,000</em> followers on Twitter.
-But the platform has atrophied and changed in many sad ways.
-Long gone are the days of fun technical deep dives,
-inside scoops on your favorite projects,
-and starting conversations with your technical peers.
-Engagement (at least for me. Maybe I&rsquo;m very boring?)
-is way down and the platform itself is breaking:
-I haven&rsquo;t been able to reliably access my DMs for the better part of a week.</p>
-<p>Instead, tech Twitter has been left with an exorbitant amount of <em>&ldquo;influencers&rdquo;</em> saying things like:
-<em>&ldquo;As a developer, how many hours do you sleep&rdquo;</em>,
-<em>&ldquo;10 reasons Next.js is the best thing since sliced bread!&rdquo;</em>,
-and <em>&ldquo;How to get your first tech job in 6 months!&rdquo;</em>.
-All shameless attempts to groom the <em>all seeing algorithm</em> in their favor.</p>
-<p>For me, the interesting conversations had stifled and it was time to try something else.
-Enter Mastodon; the blessed successor to many&rsquo;s beloved Twitter of a forgotten era!</p>
-<p>Mastodon is abit weird though.</p>
-<p>For one, there&rsquo;s no <em>&ldquo;algorithm&rdquo;</em>.
-It&rsquo;s just a sequential timeline of stuff from people you follow.
-For some who grew up in the age of never ending, dopamine dumping,
-slot machine scrolling, <em>this might take awhile to get used to.</em>
-But what you&rsquo;ll find instead is real <em>conversation</em>
-and the ability to engage with those <em>people</em> directly.
-I don&rsquo;t miss the days of inflammatory content designed to artificially drive up engagement.
-I&rsquo;m happy it&rsquo;s been replaced in my social media life with a slower, more intentional feed.</p>
-<p>In that same vein, you&rsquo;ll also notice that Mastodon is not a centralized place where <em>everyone</em> gathers
-to share their hot takes. Instead, it&rsquo;s <em>&ldquo;federated&rdquo;</em> which means there are
-<em>many different</em> Mastodon servers and services.
-You can then <em>crawl</em> these different
-server instances to connect with a distributed network; they&rsquo;re all interlinked.
-So, if I have an account on <em>&ldquo;server A&rdquo;</em>,
-I can still search, follow, and see content from people on <em>&ldquo;server B&rdquo;</em>.
-All of <em>my content and information</em> lives on <em>&ldquo;server A&rdquo;</em>, but through the magic of the
-internet and graph theory, a massive number of Mastodon servers can come together
-to create <em>the great &ldquo;Fediverse&rdquo;</em>; independently hosted and maintained servers
-that can all communicate together.</p>
-<p>Or not.</p>
-<p>It&rsquo;s also completely plausible to have a small Mastodon instance that is cut off from the Fediverse
-where only people internal to that instance can interact with each-other.
-That&rsquo;s the joy of open source technology
-that you have the power to own, modify, and dictate the direction of.</p>
-<p>To get started, you&rsquo;ll need to find a server that you want to join.
-I picked <a href="https://fosstodon.org">fosstodon.org</a>
-since its main focus is supporting people in the open source community.
-Browsing the list of <a href="https://joinmastodon.org/servers">indexed servers</a>
-is a great way to start and find a place that makes sense for you to call home.</p>
-<h3 id="finding-your-twitter-network">Finding your Twitter network</h3>
-<p>When you first get started, it can be hard trying to find people,
-especially if you&rsquo;re coming from a large network on Twitter.</p>
-<p>One of the Fediverse&rsquo;s biggest downfalls is a lack of an efficient and sensible search.
-Because there could be any number of different web publishing platforms linked into the broader Fediverse,
-there&rsquo;s no good way to index, search, and serve all of that distributed content at once.</p>
-<p>Thankfully, there are a few handy tools to make this transition easier!
-My favorite is <a href="https://twitodon.com/">Twitodon</a>. You sign in with your Twitter,
-sign in with your Mastodon account, and it crawls your Twitter following to find
-people in your existing network who have a Mastodon account. Then, you can export a CSV of your network
-and import it directly into Mastodon!
-(Don&rsquo;t forget to revoke Twitodon&rsquo;s access to Twitter and Mastodon once your done.
-Thankfully, they provide the steps necessary to do that).</p>
-<h3 id="user-experience">User experience</h3>
-<p>The default Mastodon user interface and experience is not amazing.
-And who can blame them.
-Mastodon is a non-profit foundation building the open source platform
-and hosting some of the biggest instances for pennies on the dollar.
-They probably have more important things to worry about (<a href="https://github.com/mastodon/mastodon/issues/20673">like if they should support quote Toots</a>).</p>
-<p>But, because the Fediverse is a thriving space full of tinkerers and hackers,
-I have a few recommendations on taking your Mastodon experience to the next level:</p>
-<h4 id="ivory">Ivory</h4>
-<p><a href="https://tapbots.com/tweetbot/">Tweetbot was a favorite Twitter client for many people.</a>
-Tapbots, the duo who created the iOS application, lovingly curated a <em>delightful</em> Twitter user experience.
-But suddenly, a few weeks ago at the beginning of January,
-Twitter shut down third party client access to the API.
-And in one fell swoop, Tweetbot was no more.
-Instead of sulking, Tapbots <em>immediately</em> got to work shipping their Mastodon iOS client, <a href="https://tapbots.com/ivory/">Ivory</a>.</p>
-<p>And wow.</p>
-<p>Before Ivory, Mastodon didn&rsquo;t really <em>&ldquo;make sense&rdquo;</em> for me.
-Now, it&rsquo;s everything I hoped for; a beautiful user interface,
-customizable buttons and actions, and notifications that actually work.
-Even in it&rsquo;s <em>very early</em> access state, it&rsquo;s still a massive accomplishment.</p>
-<p>For an iOS client (sorry Android people), I couldn&rsquo;t recommend Ivory enough.</p>
-<h4 id="elkzone">Elk.zone</h4>
-<p>So, what about a web client?
-Well, let me introduce to you <a href="https://elk.zone">Elk.zone</a>,
-a web client from members of the core <a href="https://vuejs.org/">Vue.js</a> team.</p>
-<p>And it&rsquo;s really, <em>really</em> good. I would argue maybe even better than the Twitter web client user experience.
-It&rsquo;s intuitive, it makes tons of sense, it has native lite and dark mode, etc.
-And I shouldn&rsquo;t be surprised; anytime I come across a page built with Vue,
-I&rsquo;m always impressed by the framework&rsquo;s output.</p>
-<p>Huge shout out to this small team for accomplishing so much in such a short time!</p>
-<hr>
-<p>In short, as Twitter falls apart, there is a lovely home for you somewhere in the Fediverse.
-It&rsquo;s growing day by day. And with lots of people tinkering on the platform,
-it&rsquo;s user experience, features, and possibilities will only continue to thrive from here.
-I can&rsquo;t wait to see you there and start a conversation:
-<a href="https://fosstodon.org/@johnmcbride">https://fosstodon.org/@johnmcbride</a></p>
-<hr>
-<p>If you found this blog post valuable,
-consider <a href="https://johncodes.com/index.xml">subscribing to future posts via RSS</a>
-or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub sponsors.</a></p>
-<hr>
-<script src="https://giscus.app/client.js"
-        data-repo="jpmcb/blog"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkxMTYxODMyNjg="
-        data-category="Blog comments"
-        data-category-id="DIC_kwDOBuzQ5M4CTbHW"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="dark_dimmed"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-]]></content:encoded>
-    </item>
-    <item>
       <title>So long windows 7!</title>
-      <link>//localhost:1313/posts/2023/01-14-sat-edition/</link>
+      <link>/posts/2023/01-14-sat-edition/</link>
       <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/2023/01-14-sat-edition/</guid>
+      <guid>/posts/2023/01-14-sat-edition/</guid>
       <description>Welcome to the &amp;ldquo;Sunday Edition&amp;rdquo; of my blog. This is my (occasionally) recurring weekly news letter where I highlight some interesting things from across the tech industry, share a few insights from the week, and give you a chance to catch up on some worth-while reads from around the internet.
 If you&amp;rsquo;d like to subscribe via RSS and receive new posts, you can find the atom feed here.
 News Microsoft ended long term support for Windows 7 this week.</description>
@@ -2158,146 +1718,10 @@ alias escape for zsh, bash, etc.</p>
 ]]></content:encoded>
     </item>
     <item>
-      <title>How I got a job at Amazon as a software engineer</title>
-      <link>//localhost:1313/posts/legacy/aws-job/</link>
-      <pubDate>Wed, 14 Dec 2022 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/legacy/aws-job/</guid>
-      <description>If you&amp;rsquo;d like a view a video version of this article, check out the following:
-In the summer of 2022, I left my job at VMware for Amazon Web Services. It was a bitter sweet journey; I loved my time at VMware and I loved working on some cutting edge things in the Kubernetes space. Even just a few months latter, the project I was working on is now completely defunct.</description>
-      <content:encoded><![CDATA[<p><em>If you&rsquo;d like a view a video version of this article, check out the following:</em></p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/vcyXrlGKec4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<hr>
-<p>In the summer of 2022, I left my job at VMware for Amazon Web Services.
-It was a bitter sweet journey; I loved my time at VMware
-and I loved working on some cutting edge things in the Kubernetes space.
-Even just a few months latter, <a href="https://github.com/vmware-tanzu/community-edition">the project I was working on is now completely defunct.</a></p>
-<p>The process to getting into AWS was no easy one.
-But in the end, over the course of interviewing at many different companies,
-I landed with 4 offers. I decided to go with AWS since it was the most compelling offer
-and I get to work on some <a href="https://github.com/bottlerocket-os/bottlerocket">really cool technologies</a> I&rsquo;m excited about.</p>
-<p>Here are my biggest pieces of advice for landing a job and the process I did to make it happen:</p>
-<h2 id="1-study">1. Study</h2>
-<p>I studied <em>alot</em> in preparation for my interviews.
-Ontop of my 40hr/week job at VMware, I was studying an additional 20-30 hours a week for about 4 weeks.
-This meant that for awhile, in the middle of July, all I was doing was working and studying.</p>
-<p>But I was <em>very</em> focused on how I approached my interview prep and what things I wanted to tackle:</p>
-<h4 id="the-14-principles-to-ace-any-coding-interviewhttpshackernooncom14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed"><a href="https://hackernoon.com/14-patterns-to-ace-any-coding-interview-question-c5bb3357f6ed">The 14 Principles to Ace Any Coding interview</a></h4>
-<p>This is my all-time <em>favorite</em> resource for ramping up on coding interviews.
-It&rsquo;s just an article, but it&rsquo;s a critical way to think about coding interviews
-and how to approach them.
-Since there are only 14 patterns, they are easy enough to remember
-but also deep enough to apply to a myriad of different questions.</p>
-<p>If you can master each of these, you will be well on your way to acing your coding interview.</p>
-<h4 id="grokking-the-coding-interviewhttpswwweducativeiocoursesgrokking-coding-interview-patterns-python"><a href="https://www.educative.io/courses/grokking-coding-interview-patterns-python">Grokking the Coding Interview</a></h4>
-<p>I used this course as a supplement to the 14 patterns.
-It&rsquo;s actually created by the author of the 14 patterns article
-but has alot of interactive questions you can go through to get ramped up quickly.
-Unfortunately, it is quite expensive. But I found the cost to be worth it.</p>
-<p>If you don&rsquo;t want to pay for the course, you can find almost all the same questions on Leetcode.
-You just have to do some more digging and figure out some of the solutions on your own.</p>
-<h4 id="blind-75httpsleetcodecomdiscussgeneral-discussion460599blind-75-leetcode-questions"><a href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">Blind 75</a></h4>
-<p>By this point, the blind 75 have become a notorious list of Leetcode questions that <em>constantly</em> come up
-in whiteboard style interviews.
-But I <em>didn&rsquo;t</em> do all of them; I only did probably 20-30 or so. And I was very selective on <em>which</em> ones
-I wanted to tackle. You&rsquo;ll notice that the are broken up into different categories.
-In general, if you can solve 1 or 2 linked list question, you can solve almost all of them.
-So I started skipping the ones that seemed to repeat or overlap.</p>
-<p>This compounded with the 14 patterns since I was able to apply that knowledge alongside the
-various data structures and algorithms identified by the blind 75 as the most important.</p>
-<h4 id="cracking-the-coding-interviewhttpswwwcrackingthecodinginterviewcom"><a href="https://www.crackingthecodinginterview.com/">Cracking the Coding Interview</a></h4>
-<p>I did open up Cracking the Coding Interview, what most would consider the bible of
-whiteboard style interviews.
-But I only refreshed myself on the most important parts, mostly the first few chapters.
-I had read this book in the past (I think back in 2018?), and I didn&rsquo;t feel it was necessary
-to go through the whole thing.
-Again, I felt I was already getting alot of benefit from the 14 patterns and the blind 75.
-So, as I skimmed the book, I skipped portions I felt overlapped with material I&rsquo;d already covered
-or was too obscure the be relevant to my study plan.</p>
-<h4 id="elements-of-programming-interviews-in-pythonhttpselementsofprogramminginterviewscomabout"><a href="https://elementsofprogramminginterviews.com/about/">Elements of Programming Interviews in Python</a></h4>
-<p>I love Elements of Programming Interviews. It&rsquo;s <em>very</em> deep,
-has alot of well thought out solutions, and is a great way to refresh your knowledge of a chosen language
-(in my case, Python).</p>
-<p>But it&rsquo;s a bit of a double edged sword; for my study plan, it was too much and I wanted to stay focused
-on the 14 patterns, the blind 75, and grokking the coding interview.
-So, instead, I used it as supplemental material, mostly to refresh myself on python3,
-it&rsquo;s inner workings, and some tricks that are useful during interviews.</p>
-<hr>
-<p>All in all, if I had to only focus on 2 of these,
-I&rsquo;d say the 14 patterns to ace any coding interview and the Blind 75 are the most important.
-If you can master the patterns and have a good understanding of the Blind 75 (and the various categories),
-then you&rsquo;ll be <em>95% of the way there</em>.</p>
-<h2 id="2-get-a-referral">2. Get a referral</h2>
-<p>Leverage your network! I hit up alot of people (just to see what&rsquo;s out there)
-and it was massively successful. I&rsquo;d say my favorite interviews all came from referrals.
-You also get the benefit of skipping the &ldquo;get to know you&rdquo; recruiter call.
-So reach out to people on LinkedIn, previous co-workers</p>
-<h2 id="3-company-values">3. Company values</h2>
-<p>Every company, no matter how big or small, has some values they live by.
-At Amazon, these are the leadership principles and you <em>will</em> be asked behavioral style questions
-based on these company values.</p>
-<p>Do your research! Come prepared to the interview knowing the company values.</p>
-<h2 id="4-take-notes">4. Take notes</h2>
-<p>I consistently took notes after each interview. This was a big win since I was doing 3-4 interviews
-<em>per week</em>. After each interview I would note who I talked to, what we talked about, any advice they gave me
-about the next round, etc.</p>
-<h2 id="5-open-source">5. Open source</h2>
-<p>Open source is a great way to show off your code, show off what you&rsquo;ve done,
-and how you&rsquo;ve contributed to the broader open source world.</p>
-<h2 id="6-story-telling">6. Story telling</h2>
-<p>Story telling in interviews is huge.
-A good story conveys your impact, what you did, the result of your actions,
-and much much more.</p>
-<p>I prefer 2 story telling methods:</p>
-<h4 id="star-method">STAR method</h4>
-<p>This stands for Situation. Task. Action. Result.
-And people at Amazon love this for interviews (and for good reason).
-It tells the person listen the kind of impact you had across a certain situation
-and what you did to remedy it through your actions.</p>
-<h4 id="man-in-the-hole-method">Man in the hole method</h4>
-<p>The man in the hole story telling method is abit more nuanced.
-You start from a &ldquo;good place&rdquo; and describe how some hole is getting dug out from under you.
-This is essentially the &ldquo;situation&rdquo; from the STAR method.</p>
-<p>But you keep digging and you keep digging. Until it seems that there is no way
-you could possibly get out of the hole.</p>
-<p>Then, you describe the actions you took to get you (or your team / organization) <em>out of that hole</em>.
-It&rsquo;s a very powerful method for describing high impact from things you did or delivered.</p>
-<hr>
-<p>This advice you could really apply to <em>any</em> interview,
-but going back to basics and studying hard was a really great way to do well in my interviews
-and land a few different offers. Hope this was helpful! Until next time!!</p>
-<hr>
-<p>If you found this blog post valuable,
-consider <a href="https://johncodes.com/index.xml">subscribing to future posts via RSS</a>
-or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub sponsors.</a></p>
-<hr>
-<script src="https://giscus.app/client.js"
-        data-repo="jpmcb/blog"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkxMTYxODMyNjg="
-        data-category="Blog comments"
-        data-category-id="DIC_kwDOBuzQ5M4CTbHW"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="dark_dimmed"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
-
-]]></content:encoded>
-    </item>
-    <item>
       <title>Leaky Go Channels</title>
-      <link>//localhost:1313/posts/legacy/golang-performance/</link>
+      <link>/posts/legacy/golang-performance/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/posts/legacy/golang-performance/</guid>
+      <guid>/posts/legacy/golang-performance/</guid>
       <description>These simple go tests check the &amp;ldquo;leaky-ness&amp;rdquo; of using channels in Go. There are two methods described here; one using both a local context, and the parent context. When tests are run against both, the LeakyAsync method runs faster, but fails the leak checker as goroutines are not resolved or cleaned up.
 In a production system with possibly thousands of go routines being spun up, this could result in massive memory leaks and a deadlock situation in the go binary.</description>
       <content:encoded><![CDATA[<p>These simple go tests check the &ldquo;leaky-ness&rdquo; of using channels in Go.
@@ -2497,9 +1921,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>Slack Is Always Watching ...</title>
-      <link>//localhost:1313/posts/legacy/slack-is-watching/</link>
+      <link>/posts/legacy/slack-is-watching/</link>
       <pubDate>Mon, 21 Jan 2019 21:18:06 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/slack-is-watching/</guid>
+      <guid>/posts/legacy/slack-is-watching/</guid>
       <description>(Note: this is from a blog archieve dated 2019/01/21. These opinions are my own and the slack API may have changed) TLDR: The Slack API exposes endpoints for a token holder to read all public and private messages.
 In today&amp;rsquo;s world, violations of privacy are no surprise. Between all the leaks and data dumps, many people have accepted this as &amp;ldquo;just the world we live in&amp;rdquo;. But what if information was exposed that could be used to judge your work performance?</description>
       <content:encoded><![CDATA[<p>(Note: this is from a blog archieve dated 2019/01/21. These opinions are my own and the slack API may have changed)
@@ -2583,9 +2007,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>To Catch a Hacker - NPM Even Stream</title>
-      <link>//localhost:1313/posts/legacy/npm-event-stream/</link>
+      <link>/posts/legacy/npm-event-stream/</link>
       <pubDate>Fri, 14 Dec 2018 21:20:46 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/npm-event-stream/</guid>
+      <guid>/posts/legacy/npm-event-stream/</guid>
       <description>(Note: this post is from a legacy blog dated 12/14/2018 and some content or links may have changed)
 A few weeks ago, this issue was opened on a popular Node NPM package called Event Stream. This package enables Node streams to be simpler and streamlines many I/O operations within Node. Regardless, this package is a key dependency for many other Node packages and has over 1 million downloads per week from NPM.</description>
       <content:encoded><![CDATA[<p>(Note: this post is from a legacy blog dated 12/14/2018 and some content or links may have changed)</p>
@@ -2784,9 +2208,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>Rethink-DB Cookbook</title>
-      <link>//localhost:1313/posts/legacy/rethink-db-cookbook/</link>
+      <link>/posts/legacy/rethink-db-cookbook/</link>
       <pubDate>Mon, 05 Nov 2018 21:15:35 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/rethink-db-cookbook/</guid>
+      <guid>/posts/legacy/rethink-db-cookbook/</guid>
       <description>(Note: this is from an old blog archieve dating 2018/11/05. Some things with Rethink have very likely changed) RethinkDB is a JSON based, non-relational database that provides a promise oriented, Node JS backend. It integrates seamlessly with JSON type data and is a production ready option for Node infrastructures.
 Pre-reqs: Docker, Node, NPM
 This post will serve as a brief overview of RethinkDB and hopefully give you a taste of how it works and why a JSON based database might be beneficial for you and your product.</description>
@@ -2943,9 +2367,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>Virtual machine trouble?? Try Docker!</title>
-      <link>//localhost:1313/posts/legacy/docker-trouble/</link>
+      <link>/posts/legacy/docker-trouble/</link>
       <pubDate>Sat, 13 May 2017 22:17:04 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/docker-trouble/</guid>
+      <guid>/posts/legacy/docker-trouble/</guid>
       <description>If you are a Oregon State CS 344 student, then you&amp;rsquo;ve been told to develop exclusively on the OS1 server. Unfortunately, this server is frequently nuked by fork bombs. If you are unable to run a full CentOS virtual machine, then here is a step by step guide to getting a CentOS docker container running on your computer. This way, you can continue to work on your assignments in a similar environment to OS1 and not have to have a full virtual machine running!</description>
       <content:encoded><![CDATA[<p>If you are a Oregon State CS 344 student, then you&rsquo;ve been told to develop exclusively on the OS1 server. Unfortunately, this server is frequently nuked by fork bombs. If you are unable to run a full CentOS virtual machine, then here is a step by step guide to getting a CentOS docker container running on your computer. This way, you can continue to work on your assignments in a similar environment to OS1 and not have to have a full virtual machine running!</p>
 <p><em><em>Note:</em></em> when a &ldquo;host&rdquo; is referenced, this is in regard to your own laptop and your own environment, not any container or virtual machine you might have running.</p>
@@ -3058,9 +2482,9 @@ or <a href="https://github.com/sponsors/jpmcb">buying me a coffee via GitHub spo
     </item>
     <item>
       <title>Vim Tips!</title>
-      <link>//localhost:1313/posts/legacy/vim-tips/</link>
+      <link>/posts/legacy/vim-tips/</link>
       <pubDate>Wed, 22 Mar 2017 21:19:16 -0700</pubDate>
-      <guid>//localhost:1313/posts/legacy/vim-tips/</guid>
+      <guid>/posts/legacy/vim-tips/</guid>
       <description>(Note: this is a post from a legacy blog. This post was intended to help new OSU students get started with Vim)
 I&amp;rsquo;d consider myself some sort of Vim - evangelist. It&amp;rsquo;s an incredible tool and has ALOT of power. If there&amp;rsquo;s something you wish Vim could do, there&amp;rsquo;s probably a plugin for it or a way to make Vim do it with scripting (in its own language!). Moderate proficiency in Vim is a skill that nearly every developer could benefit from.</description>
       <content:encoded><![CDATA[<p>(Note: this is a post from a legacy blog. This post was intended to help new OSU students get started with Vim)</p>

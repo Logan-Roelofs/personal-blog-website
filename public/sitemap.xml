@@ -2,81 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/posts/2024/03-16-config-neovim-for-astro/</loc>
+    <loc>//localhost:1313/posts/2024/03-16-config-neovim-for-astro/</loc>
     <lastmod>2024-03-16T10:00:00-06:00</lastmod>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>2024-03-16T10:00:00-06:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
+    <loc>//localhost:1313/posts/</loc>
     <lastmod>2024-03-16T10:00:00-06:00</lastmod>
   </url><url>
-    <loc>/posts/2024/03-03-awk-basics/</loc>
+    <loc>//localhost:1313/posts/2024/03-03-awk-basics/</loc>
     <lastmod>2024-03-03T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/2024/01-15-tmux-scheduling/</loc>
+    <loc>//localhost:1313/posts/2024/01-15-tmux-scheduling/</loc>
     <lastmod>2024-01-15T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/2024/01-01-in-review/</loc>
+    <loc>//localhost:1313/posts/2024/01-01-in-review/</loc>
     <lastmod>2024-01-01T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/2023/12-28-4-billon-go-if-statements/</loc>
+    <loc>//localhost:1313/posts/2023/12-28-4-billon-go-if-statements/</loc>
     <lastmod>2023-12-28T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/2023/09-02-there-is-no-secure-software-supply-chain/</loc>
+    <loc>//localhost:1313/posts/2023/09-02-there-is-no-secure-software-supply-chain/</loc>
     <lastmod>2023-09-03T09:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/2023/08-11-prestige/</loc>
-    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/2023/06-29-on-maintaining-cobra/</loc>
+    <loc>//localhost:1313/posts/2023/06-29-on-maintaining-cobra/</loc>
     <lastmod>2023-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/2023/06-13-goodbye-aws/</loc>
-    <lastmod>2023-06-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/2023/02-25-nvim-spell/</loc>
+    <loc>//localhost:1313/posts/2023/02-25-nvim-spell/</loc>
     <lastmod>2023-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/2023/01-28-the-joy-of-mastodon/</loc>
-    <lastmod>2023-01-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/2023/01-14-sat-edition/</loc>
+    <loc>//localhost:1313/posts/2023/01-14-sat-edition/</loc>
     <lastmod>2023-01-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/legacy/aws-job/</loc>
-    <lastmod>2022-12-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/legacy/golang-performance/</loc>
+    <loc>//localhost:1313/posts/legacy/golang-performance/</loc>
     <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/posts/legacy/slack-is-watching/</loc>
+    <loc>//localhost:1313/posts/legacy/slack-is-watching/</loc>
     <lastmod>2019-01-21T21:18:06-07:00</lastmod>
   </url><url>
-    <loc>/posts/legacy/npm-event-stream/</loc>
+    <loc>//localhost:1313/posts/legacy/npm-event-stream/</loc>
     <lastmod>2018-12-14T21:20:46-07:00</lastmod>
   </url><url>
-    <loc>/posts/legacy/rethink-db-cookbook/</loc>
+    <loc>//localhost:1313/posts/legacy/rethink-db-cookbook/</loc>
     <lastmod>2018-11-05T21:15:35-07:00</lastmod>
   </url><url>
-    <loc>/posts/legacy/docker-trouble/</loc>
+    <loc>//localhost:1313/posts/legacy/docker-trouble/</loc>
     <lastmod>2017-05-13T22:17:04-07:00</lastmod>
   </url><url>
-    <loc>/posts/legacy/vim-tips/</loc>
+    <loc>//localhost:1313/posts/legacy/vim-tips/</loc>
     <lastmod>2017-03-22T21:19:16-07:00</lastmod>
   </url><url>
-    <loc>/about/</loc>
+    <loc>//localhost:1313/about/</loc>
   </url><url>
-    <loc>/interview-prep/</loc>
+    <loc>//localhost:1313/interview-prep/</loc>
   </url><url>
-    <loc>/talks/</loc>
+    <loc>//localhost:1313/talks/</loc>
   </url><url>
-    <loc>/archives/</loc>
+    <loc>//localhost:1313/archives/</loc>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
   </url><url>
-    <loc>/search/</loc>
+    <loc>//localhost:1313/search/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
   </url>
 </urlset>
