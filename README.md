@@ -1,5 +1,3 @@
 # Hello :wave:
 
-Why not check out the actual blog at [johncodes.com](johncodes.com)?
-But feel free to open an issue or pull request if you find a typo!
-# blog
+Welcome to my blog where I will be posting about tech, programming, and other things I find interesting. I hope you find something useful here.
