@@ -6,6 +6,88 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Useful Powershell Snippits to Create Custom Installers/Uninstallers</title>
+      <link>//localhost:1313/posts/sccm_powershell/</link>
+      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/sccm_powershell/</guid>
+      <description>The Basics The following code snippets are useful for creating custom installers and uninstallers in Powershell. The advantage to creating script installers versus uploading a regular exe or msi is that a script installer allows for fine-grained control over the installation process. This is especially useful when dealing with porly written installers.
+At the end of this article, I will provide an exaple of a full script that can be used to install/uninstall a program.</description>
+      <content:encoded><![CDATA[<hr>
+<h2 id="the-basics">The Basics</h2>
+<p>The following code snippets are useful for creating custom installers and uninstallers in Powershell. The advantage to creating script installers versus uploading a regular exe or msi is that a script installer allows for fine-grained control over the installation process. This is especially useful when dealing with porly written installers.</p>
+<p>At the end of this article, I will provide an exaple of a full script that can be used to install/uninstall a program.</p>
+<hr>
+<h2 id="snippets">Snippets</h2>
+<h3 id="automagically-uninstall-programs">Automagically Uninstall Programs</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Retrieve uninstall information from the registry</span>
+</span></span><span style="display:flex;"><span>$programsToUninstall = Get-ChildItem -Path HKLM<span style="color:#960050;background-color:#1e0010">:</span>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM<span style="color:#960050;background-color:#1e0010">:</span>\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall |
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Extract properties of each registry key</span>
+</span></span><span style="display:flex;"><span>    Get-ItemProperty |
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Filter to only include items where the DisplayName matches &#34;Program Name&#34;</span>
+</span></span><span style="display:flex;"><span>    Where-Object { ($_.DisplayName <span style="color:#f92672">-match</span> <span style="color:#e6db74">&#34;Program Name&#34;</span>)} |
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Select the UninstallString and DisplayName for further processing</span>
+</span></span><span style="display:flex;"><span>    Select-Object UninstallString, DisplayName
+</span></span></code></pre></div><p>This script will search the registry for installed programs that have a displayname that matches &ldquo;Program Name&rdquo; and return the uninstall string and display name for each program into the <code>$programsToUninstall</code> array. There is a few ways that we can expand this script to be more useful. For example,</p>
+<ul>
+<li>Adding a foreach loop to modify the uninstall string to include the <code>/quiet</code> or <code>-s</code> flag (depending on the program that we are unisntalling). This will allow us to silently uninstall the program.</li>
+<li>Add more <code>Select-Object</code> properties to the script to include the <code>displayVersion</code> of the program. This will allow us to create fine-grained uninstall scripts that can target specific versions of a program. Additionally, we can use this information to add to a custom log file.</li>
+</ul>
+<h3 id="error-handling-when-calling-external-programs">Error Handling When Calling External Programs</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Running the msiexec program with example parameters</span>
+</span></span><span style="display:flex;"><span>    $processInfo = Start-Process msiexec.exe -ArgumentList <span style="color:#e6db74">&#34;/i C:\Path\To\Your\Installer.msi /quiet /norestart&#34;</span> -Wait -PassThru
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Checking the exit code of the process</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> ($processInfo.ExitCode <span style="color:#f92672">-eq</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;Installation succeeded without requiring a reboot.&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elseif</span> ($processInfo.ExitCode <span style="color:#f92672">-eq</span> <span style="color:#ae81ff">3010</span>) {
+</span></span><span style="display:flex;"><span>        Write-Host <span style="color:#e6db74">&#34;Installation succeeded but a reboot is required.&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Restart-Computer (restart the computer now)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># $restart = $true (restart the computer later and using the $restart variable)</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">throw</span> <span style="color:#e6db74">&#34;Installation failed with exit code </span>$($processInfo.ExitCode)<span style="color:#e6db74">.&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">catch</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># If an exception is thrown in the try block, it&#39;s caught here.</span>
+</span></span><span style="display:flex;"><span>    Write-Host <span style="color:#e6db74">&#34;An error occurred: </span>$_<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Additional error handling can be performed here if needed.</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The key takeaway from this script is the use of the <code>try</code> and <code>catch</code> blocks. The <code>try</code> block will attempt to run the code within the block. If an error occurs, the <code>catch</code> block will catch the error and run the code within the block. This is useful when calling external programs that may not return a 0 exit code when they run successfully. For example, the <code>msiexec</code> program will return a 0 exit code when it runs successfully, but it may return a 3010 exit code if a reboot is required. By using the <code>try</code> and <code>catch</code> blocks, we can catch the 3010 exit code and handle it accordingly.</p>
+<h3 id="command-line-arguments">Command Line Arguments</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">param</span> (
+</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">string</span>]$silent,
+</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">string</span>]$uninstall
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>Command line arguments can be passed to a Powershell script by using the <code>param</code> block at the beginning of the script. This block allows you to define the parameters that the script will accept. In this example, the script accepts two parameters: <code>$silent</code> and <code>$uninstall</code>. These parameters can be passed to the script when it is run from the command line. For example, <code>.\script.ps1 -silent &quot;true&quot; -uninstall &quot;true&quot;</code>.</p>
+<h2 id="full-example">Full Example</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"></code></pre></div><hr>
+<script src="https://giscus.app/client.js"
+        data-repo="jpmcb/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxMTYxODMyNjg="
+        data-category="Blog comments"
+        data-category-id="DIC_kwDOBuzQ5M4CTbHW"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark_dimmed"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+]]></content:encoded>
+    </item>
   </channel>
 </rss>
