@@ -1436,9 +1436,12 @@ Not deep enough to notice a dependency like cobra and its lack of maintenance.</
 what the &ldquo;solo&rdquo; maintainer experience is like, and why solo maintainer projects are incredibly dangerous
 to the wellness of the entire ecosystem and broader secure software supply-chain.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/YBsDnXXW_d8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YBsDnXXW_d8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <hr>
 <p>I think about that talk alot.
@@ -1503,9 +1506,12 @@ or <a href="https://github.com/sponsors/jpmcb">buy me a coffee via GitHub sponso
       <description>I know.
 Any sane person&amp;rsquo;s editor already has spellchecking built in. And enabled by default. But I could never leave my beloved Neovim (and all the muscle memory I&amp;rsquo;ve built) just to spell things correctly! That&amp;rsquo;s why I became a programmer dammit! Who needs to know how to spell correctly when I can have single character variable names! Besides. We have tools. Isn&amp;rsquo;t that what computers are for!? Automate the boring stuff!</description>
       <content:encoded><![CDATA[
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/KoL-2WTlr04" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/KoL-2WTlr04?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <hr>
 <p><em>I know.</em></p>
@@ -2844,16 +2850,22 @@ and reduces the overall complexity of your technical interview.</p>
 <hr>
 <h3 id="kubecon-na-hacking-the-kubernetes-secure-software-supply-chain-with-zip-domains">Kubecon NA: Hacking the Kubernetes Secure Software Supply-chain with .zip Domains</h3>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/57k-KwOsj9c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/57k-KwOsj9c?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <hr>
 <h3 id="neovim-conf-2023-introducing-nvim-llama">Neovim Conf 2023: Introducing nvim-llama</h3>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/Jx4IEJRlPQw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Jx4IEJRlPQw?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <hr>
 <h3 id="pancakescon-4-containers-hardening-against-escapes-and-funk-bass">PancakesCon 4: Containers, Hardening Against Escapes, and Funk Bass</h3>
@@ -2861,9 +2873,12 @@ and reduces the overall complexity of your technical interview.</p>
 In this talk, I discuss Bottlerocket, a Linux based operating system designed for running containers,
 as a use case for hardening container based environments against attack.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/7azaXmlcoGg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/7azaXmlcoGg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <h2 id="2022">2022</h2>
 <hr>
@@ -2872,9 +2887,12 @@ as a use case for hardening container based environments against attack.</p>
 an extremely important software project in the cloud-native ecosystem,
 with just a small group of other contributors.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/YBsDnXXW_d8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YBsDnXXW_d8?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <h3 id="business-of-open-source-exploring-the-risks-of-single-maintainer-dependencies-with-john-mcbride">Business of Open Source: Exploring the Risks of Single Maintainer Dependencies with John McBride</h3>
 <p>During my time in Spain for Kubecon EU &lsquo;22,
@@ -2889,9 +2907,12 @@ But what <em>IS</em> Lua?</p>
 You&rsquo;ll learn how to use it effectively within Nvim, how to create a simple Lua plugin,
 and how to use it on it&rsquo;s own via it&rsquo;s interpreter.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/gjIl5Sfh2QQ" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/gjIl5Sfh2QQ?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 <hr>
 <h3 id="deserted-island-devops-2022-distributed-shared-team-configurations-with-oh-my-zsh">Deserted Island DevOps 2022: Distributed Shared Team Configurations With Oh-My-Zsh</h3>
@@ -2903,9 +2924,12 @@ in order to share team knowledge, distribute common configurations, and share in
 I also discuss the real world scenario this use case emerged from,
 challenges faced in this approach, and how you can leverage Oh-My-Zsh for your distributed devops teams.</p>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ppvjyibyrEg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ppvjyibyrEg?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
 
 ]]></content:encoded>
     </item>

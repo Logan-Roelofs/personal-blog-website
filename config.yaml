@@ -1,8 +1,8 @@
-baseURL: ''
-languageCode: 'en-us'
-title: ''
+baseURL: ""
+languageCode: "en-us"
+title: ""
 paginate: 5
-theme: 'PaperMod'
+theme: "PaperMod"
 
 markup:
   tableOfContents:
@@ -30,9 +30,9 @@ languages:
         - name: Blog
           url: archives
           weight: 1
-        - name: RSS
-          url: index.xml
-          weight: 2
+        #- name: RSS
+        #  url: index.xml
+        #  weight: 2
         - name: Search
           url: search/
           weight: 4
@@ -46,7 +46,8 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Logan-Roelofs
   description: ""
-  keywords: [Blog, Software Engineer, Software Developer blog, Software developer]
+  keywords:
+    [Blog, Software Engineer, Software Developer blog, Software developer]
   #author: John McBride
   DateFormat: "January 2, 2006"
   defaultTheme: "dark"
@@ -58,7 +59,7 @@ params:
   profileMode:
     enabled: true
     title: Logan Roelofs
-    subtitle: "Hacker Man"
+    subtitle: ""
     imageUrl: "images/profile-pic.jpg"
     imageWidth: 200
     imageHeight: 200
@@ -66,8 +67,8 @@ params:
   socialIcons:
     - name: email
       url: "mailto:loroe333@gmail.com"
-    - name: rss
-      url: "https://logan-roelofs.github.io/blog/index.xml"
+    #- name: rss
+    #  url: "https://logan-roelofs.github.io/blog/index.xml"
     - name: github
       url: "https://github.com/Logan-Roelofs"
     #- name: youtube
@@ -77,10 +78,10 @@ params:
     #- name: mastodon
     #  url: "https://fosstodon.org/@johnmcbride"
     - name: linkedin
-      url: "www.linkedin.com/in/logan-roelofs"
+      url: "https://linkedin.com/in/logan-roelofs"
 
 outputs:
   home:
     - HTML
-    - RSS
+    # - RSS
     - JSON # is necessary for RSS feed, hugo metadata, etc.
