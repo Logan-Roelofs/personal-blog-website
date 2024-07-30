@@ -3,39 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2024-03-16T10:00:00-06:00</lastmod>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2024/03-16-config-neovim-for-astro/</loc>
-    <lastmod>2024-03-16T10:00:00-06:00</lastmod>
+    <loc>//localhost:1313/posttobe/filetransfers/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posttobe/</loc>
+    <lastmod>2024-07-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/posts/sccm_powershell/</loc>
+    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/posts/</loc>
-    <lastmod>2024-03-16T10:00:00-06:00</lastmod>
+    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/posts/2024/03-03-awk-basics/</loc>
-    <lastmod>2024-03-03T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2024/01-15-tmux-scheduling/</loc>
-    <lastmod>2024-01-15T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2024/01-01-in-review/</loc>
-    <lastmod>2024-01-01T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2023/12-28-4-billon-go-if-statements/</loc>
-    <lastmod>2023-12-28T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2023/09-02-there-is-no-secure-software-supply-chain/</loc>
-    <lastmod>2023-09-03T09:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2023/06-29-on-maintaining-cobra/</loc>
-    <lastmod>2023-06-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2023/02-25-nvim-spell/</loc>
-    <lastmod>2023-02-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2023/01-14-sat-edition/</loc>
-    <lastmod>2023-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/posts/2023/helloworld/</loc>
+    <loc>//localhost:1313/helloworld/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/about/</loc>

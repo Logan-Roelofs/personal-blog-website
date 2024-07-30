@@ -6,39 +6,82 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Useful Powershell Snippits to Create Custom Installers/Uninstallers</title>
+      <title>Create Custom Installers/Uninstallers Using Powershell For MEM/SCCM</title>
       <link>//localhost:1313/posts/sccm_powershell/</link>
-      <pubDate>Thu, 11 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posts/sccm_powershell/</guid>
-      <description>The Basics The following code snippets are useful for creating custom installers and uninstallers in Powershell. The advantage to creating script installers versus uploading a regular exe or msi is that a script installer allows for fine-grained control over the installation process. This is especially useful when dealing with porly written installers.
-At the end of this article, I will provide an exaple of a full script that can be used to install/uninstall a program.</description>
+      <description>The Basics The following script is useful for creating custom installers and uninstallers in Powershell. The advantage to creating script installers versus uploading a regular exe or msi into MEM/SCCM is that a script installer allows for fine-grained control over the installation process. This is especially useful when dealing with porly written installers.
+At the end of this article, I will provide a full break down of the script section by section.</description>
       <content:encoded><![CDATA[<hr>
 <h2 id="the-basics">The Basics</h2>
-<p>The following code snippets are useful for creating custom installers and uninstallers in Powershell. The advantage to creating script installers versus uploading a regular exe or msi is that a script installer allows for fine-grained control over the installation process. This is especially useful when dealing with porly written installers.</p>
-<p>At the end of this article, I will provide an exaple of a full script that can be used to install/uninstall a program.</p>
+<p>The following script is useful for creating custom installers and uninstallers in Powershell. The advantage to creating script installers versus uploading a regular exe or msi into MEM/SCCM is that a script installer allows for fine-grained control over the installation process. This is especially useful when dealing with porly written installers.</p>
+<p>At the end of this article, I will provide a full break down of the script section by section.</p>
 <hr>
+<h2 id="full-script-example">Full Script Example</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"></code></pre></div><hr>
 <h2 id="snippets">Snippets</h2>
-<h3 id="automagically-uninstall-programs">Automagically Uninstall Programs</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Retrieve uninstall information from the registry</span>
-</span></span><span style="display:flex;"><span>$programsToUninstall = Get-ChildItem -Path HKLM<span style="color:#960050;background-color:#1e0010">:</span>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM<span style="color:#960050;background-color:#1e0010">:</span>\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall |
+<h3 id="command-line-arguments">Command Line Arguments</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">param</span> (
+</span></span><span style="display:flex;"><span>    [Alias(<span style="color:#e6db74">&#34;silent&#34;</span>)]
+</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">switch</span>]$s,
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Extract properties of each registry key</span>
-</span></span><span style="display:flex;"><span>    Get-ItemProperty |
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Filter to only include items where the DisplayName matches &#34;Program Name&#34;</span>
-</span></span><span style="display:flex;"><span>    Where-Object { ($_.DisplayName <span style="color:#f92672">-match</span> <span style="color:#e6db74">&#34;Program Name&#34;</span>)} |
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Select the UninstallString and DisplayName for further processing</span>
-</span></span><span style="display:flex;"><span>    Select-Object UninstallString, DisplayName
-</span></span></code></pre></div><p>This script will search the registry for installed programs that have a displayname that matches &ldquo;Program Name&rdquo; and return the uninstall string and display name for each program into the <code>$programsToUninstall</code> array. There is a few ways that we can expand this script to be more useful. For example,</p>
+</span></span><span style="display:flex;"><span>    [Alias(<span style="color:#e6db74">&#34;uninstall&#34;</span>, <span style="color:#e6db74">&#34;uninst&#34;</span>, <span style="color:#e6db74">&#34;u&#34;</span>)]
+</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">switch</span>]$x
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>Command line arguments can be passed to a Powershell script by using the <code>param</code> block at the beginning of the script. This block allows you to define the parameters that the script will accept. In this example, the script accepts two parameters: <code>$silent</code> and <code>$uninstall</code>. These parameters can be passed to the script when it is run from the command line. For example, <code>.\script.ps1 -silent &quot;true&quot; -uninstall &quot;true&quot;</code>. We use the [Alias()] attribute to define aliases for the parameters. This allows us to use different names for the parameters when running the script. For example, <code>-s</code> can be aliased to <code>-silent</code>, <code>-u</code> can be aliased to <code>-uninstall</code>. We also do not define a parameter for install, as the script will default to installing the program if no parameters are passed.</p>
+<h3 id="define-imutable-variables">Define Imutable Variables</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Set-Variable -Name <span style="color:#e6db74">&#34;AppVendor&#34;</span> -Value <span style="color:#e6db74">&#34;Google&#34;</span> -Option Constant
+</span></span><span style="display:flex;"><span>Set-Variable -Name <span style="color:#e6db74">&#34;AppName&#34;</span> -Value <span style="color:#e6db74">&#34;Chrome&#34;</span> -Option Constant
+</span></span><span style="display:flex;"><span>Set-Variable -Name <span style="color:#e6db74">&#34;AppVersion&#34;</span> -Value <span style="color:#e6db74">&#34;126.0.6478.127&#34;</span> -Option Constant
+</span></span><span style="display:flex;"><span>Set-Variable -Name <span style="color:#e6db74">&#34;AppDisplayName&#34;</span> -Value <span style="color:#e6db74">&#34;Google Chrome&#34;</span> -Option Constant
+</span></span><span style="display:flex;"><span>Set-Variable -Name <span style="color:#e6db74">&#34;AppDisplayVersion&#34;</span> -Value <span style="color:#e6db74">&#34;126.0.6478.127&#34;</span> -Option Constant
+</span></span><span style="display:flex;"><span>Set-Variable -Name <span style="color:#e6db74">&#34;AppGUID&#34;</span> -Value <span style="color:#e6db74">&#34;{A6A8A820-1396-378F-ABE5-4EBDEA19FE69}&#34;</span> -Option Constant
+</span></span><span style="display:flex;"><span>Set-Variable -Name <span style="color:#e6db74">&#34;AppLogName&#34;</span> -Value <span style="color:#e6db74">&#34;</span>${AppVendor}<span style="color:#e6db74">_</span>${AppName}<span style="color:#e6db74">_</span>${AppVersion}<span style="color:#e6db74">.log&#34;</span> -Option Constant
+</span></span><span style="display:flex;"><span>Set-Variable -Name <span style="color:#e6db74">&#34;LogPath&#34;</span> -Value <span style="color:#e6db74">&#34;</span>${Env:windir}<span style="color:#e6db74">\LogansLogs&#34;</span> -Option Constant
+</span></span></code></pre></div><p>By using the <code>-Option Constant</code> flag, we are making these variables immutable, meaning that they cannot be changed once they are set. This is useful for defining constants that will be used throughout the script, following the DRY principle (Do Not Repeat Yourself). The benefit of using constants is that they provide a single point of control for values that are used multiple times in the script, allowing us to use the variables with certainty that the value will not change.</p>
+<p>It is important to note that we are not repearing values. Insted they are two types of variables here that can be diferent from each other:</p>
 <ul>
-<li>Adding a foreach loop to modify the uninstall string to include the <code>/quiet</code> or <code>-s</code> flag (depending on the program that we are unisntalling). This will allow us to silently uninstall the program.</li>
-<li>Add more <code>Select-Object</code> properties to the script to include the <code>displayVersion</code> of the program. This will allow us to create fine-grained uninstall scripts that can target specific versions of a program. Additionally, we can use this information to add to a custom log file.</li>
+<li>Logging purposes: AppName, AppVersion</li>
+<li>Program purposes: AppDisplayName, AppDisplayVersion</li>
 </ul>
-<h3 id="error-handling-when-calling-external-programs">Error Handling When Calling External Programs</h3>
+<h3 id="logging">Logging</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">-not</span> (Test-Path -Path $LogPath)) {
+</span></span><span style="display:flex;"><span>    New-Item -Path $LogPath -ItemType Directory -Force
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (Test-Path -Path <span style="color:#e6db74">&#34;</span>${LogPath}<span style="color:#e6db74">\</span>${AppLogName}<span style="color:#e6db74">&#34;</span>) {
+</span></span><span style="display:flex;"><span>    Remove-Item -Path <span style="color:#e6db74">&#34;</span>${LogPath}<span style="color:#e6db74">\</span>${AppLogName}<span style="color:#e6db74">&#34;</span> -Force
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">-not</span> (Test-Path -Path <span style="color:#e6db74">&#34;</span>${LogPath}<span style="color:#e6db74">\</span>${AppLogName}<span style="color:#e6db74">&#34;</span>)) {
+</span></span><span style="display:flex;"><span>    New-Item -Path <span style="color:#e6db74">&#34;</span>${LogPath}<span style="color:#e6db74">\</span>${AppLogName}<span style="color:#e6db74">&#34;</span> -ItemType File -Force
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Here we add a function that will check for the existence of a log file and create one if it does not exist, additioanlly we will need to have the function create a log folder if it does not exist.</p>
+<h3 id="check-to-see-if-the-program-is-already-installed">Check to see if the program is already installed</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$installed = $false
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check 64-bit registry</span>
+</span></span><span style="display:flex;"><span>$regPath64 = <span style="color:#e6db74">&#34;HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\</span>$appGUID<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (Test-Path -Path $regPath64) {
+</span></span><span style="display:flex;"><span>    $app = Get-ItemProperty -Path $regPath64
+</span></span><span style="display:flex;"><span>    write-host <span style="color:#e6db74">&#34;App: </span>$($app.DisplayName)<span style="color:#e6db74"> </span>$($app.DisplayVersion)<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> ($app.DisplayName <span style="color:#f92672">-eq</span> $AppDisplayName <span style="color:#f92672">-and</span> $app.DisplayVersion <span style="color:#f92672">-eq</span> $AppDisplayVersion) {
+</span></span><span style="display:flex;"><span>        $installed = $true
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check 32-bit registry if not already found</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">-not</span> $installed) {
+</span></span><span style="display:flex;"><span>    $regPath32 = <span style="color:#e6db74">&#34;HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\</span>$appGUID<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (Test-Path -Path $regPath32) {
+</span></span><span style="display:flex;"><span>        $app = Get-ItemProperty -Path $regPath32
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> ($app.DisplayName <span style="color:#f92672">-eq</span> $AppDisplayName <span style="color:#f92672">-and</span> $app.DisplayVersion <span style="color:#f92672">-eq</span> $AppDisplayVersion) {
+</span></span><span style="display:flex;"><span>            $installed = $true
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="error-handling-when-calling-external-programs">Error Handling When Calling External Programs</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">try</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Running the msiexec program with example parameters</span>
 </span></span><span style="display:flex;"><span>    $processInfo = Start-Process msiexec.exe -ArgumentList <span style="color:#e6db74">&#34;/i C:\Path\To\Your\Installer.msi /quiet /norestart&#34;</span> -Wait -PassThru
@@ -62,14 +105,26 @@ At the end of this article, I will provide an exaple of a full script that can b
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Additional error handling can be performed here if needed.</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>The key takeaway from this script is the use of the <code>try</code> and <code>catch</code> blocks. The <code>try</code> block will attempt to run the code within the block. If an error occurs, the <code>catch</code> block will catch the error and run the code within the block. This is useful when calling external programs that may not return a 0 exit code when they run successfully. For example, the <code>msiexec</code> program will return a 0 exit code when it runs successfully, but it may return a 3010 exit code if a reboot is required. By using the <code>try</code> and <code>catch</code> blocks, we can catch the 3010 exit code and handle it accordingly.</p>
-<h3 id="command-line-arguments">Command Line Arguments</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#66d9ef">param</span> (
-</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">string</span>]$silent,
-</span></span><span style="display:flex;"><span>    [<span style="color:#66d9ef">string</span>]$uninstall
-</span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><p>Command line arguments can be passed to a Powershell script by using the <code>param</code> block at the beginning of the script. This block allows you to define the parameters that the script will accept. In this example, the script accepts two parameters: <code>$silent</code> and <code>$uninstall</code>. These parameters can be passed to the script when it is run from the command line. For example, <code>.\script.ps1 -silent &quot;true&quot; -uninstall &quot;true&quot;</code>.</p>
-<h2 id="full-example">Full Example</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"></code></pre></div><hr>
+<hr>
+<h2 id="additional-snippets">Additional Snippets</h2>
+<h3 id="automagically-uninstall-programs">Automagically Uninstall Programs</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Retrieve uninstall information from the registry</span>
+</span></span><span style="display:flex;"><span>$programsToUninstall = Get-ChildItem -Path HKLM<span style="color:#960050;background-color:#1e0010">:</span>\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall, HKLM<span style="color:#960050;background-color:#1e0010">:</span>\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall |
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Extract properties of each registry key</span>
+</span></span><span style="display:flex;"><span>    Get-ItemProperty |
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Filter to only include items where the DisplayName matches &#34;Program Name&#34;</span>
+</span></span><span style="display:flex;"><span>    Where-Object { ($_.DisplayName <span style="color:#f92672">-match</span> <span style="color:#e6db74">&#34;Program Name&#34;</span>)} |
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Select the UninstallString and DisplayName for further processing</span>
+</span></span><span style="display:flex;"><span>    Select-Object UninstallString, DisplayName
+</span></span></code></pre></div><p>This script will search the registry for installed programs that have a displayname that matches &ldquo;Program Name&rdquo; and return the uninstall string and display name for each program into the <code>$programsToUninstall</code> array. There is a few ways that we can expand this script to be more useful. For example,</p>
+<ul>
+<li>Adding a foreach loop to modify the uninstall string to include the <code>/quiet</code> or <code>-s</code> flag (depending on the program that we are unisntalling). This will allow us to silently uninstall the program.</li>
+<li>Add more <code>Select-Object</code> properties to the script to include the <code>displayVersion</code> of the program. This will allow us to create fine-grained uninstall scripts that can target specific versions of a program. Additionally, we can use this information to add to a custom log file.</li>
+</ul>
+<hr>
 <script src="https://giscus.app/client.js"
         data-repo="jpmcb/blog"
         data-repo-id="MDEwOlJlcG9zaXRvcnkxMTYxODMyNjg="
