@@ -13,27 +13,48 @@
       <link>//localhost:1313/posttobe/filetransfers/</link>
       <pubDate>Tue, 30 Jul 2024 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/posttobe/filetransfers/</guid>
-      <description>The Basics Windows Download Files using Powershell The esiast way to download files using Powershell is to use the Net.WebClient class. This class provides a intuitive way to download HTTP HTTPS and FTP files.
-$webClient = New-Object System.Net.WebClient $webClient.DownloadFile(&amp;#34;http://example.com/file.txt&amp;#34;, &amp;#34;C:\path\to\file.txt&amp;#34;) Ofcourse, you can also use the Invoke-WebRequest cmdlet which is the windows equivalent of curl or wget. The DownloadFile method is used to download a file to a specified location.</description>
-      <content:encoded><![CDATA[<h2 id="the-basics">The Basics</h2>
-<hr>
-<h2 id="windows">Windows</h2>
-<h3 id="download-files-using-powershell">Download Files using Powershell</h3>
+      <description>Windows Download Files using Powershell The esiast way to download files using Powershell is to use the Net.WebClient class. This class provides a intuitive way to download HTTP HTTPS and FTP files.
+$webClient = New-Object System.Net.WebClient $webClient.DownloadFile(&amp;#34;http://example.com/file.txt&amp;#34;, &amp;#34;C:\path\to\file.txt&amp;#34;) Of course, you can also use the Invoke-WebRequest cmdlet which is the windows equivalent of curl or wget. The DownloadFile method is used to download a file to a specified location.</description>
+      <content:encoded><![CDATA[<hr>
+<h1 id="windows">Windows</h1>
+<h2 id="download-files-using-powershell">Download Files using Powershell</h2>
 <p>The esiast way to download files using Powershell is to use the <code>Net.WebClient</code> class. This class provides a intuitive way to download HTTP HTTPS and FTP files.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$webClient = New-Object System.Net.WebClient
 </span></span><span style="display:flex;"><span>$webClient.DownloadFile(<span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span>, <span style="color:#e6db74">&#34;C:\path\to\file.txt&#34;</span>)
-</span></span></code></pre></div><p>Ofcourse, you can also use the <code>Invoke-WebRequest</code> cmdlet which is the windows equivalent of <code>curl</code> or <code>wget</code>. The <code>DownloadFile</code> method is used to download a file to a specified location.</p>
+</span></span></code></pre></div><p>Of course, you can also use the <code>Invoke-WebRequest</code> cmdlet which is the windows equivalent of <code>curl</code> or <code>wget</code>. The <code>DownloadFile</code> method is used to download a file to a specified location.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Invoke-WebRequest -Uri <span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span> -OutFile <span style="color:#e6db74">&#34;C:\path\to\file.txt&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
 </span></span><span style="display:flex;"><span>curl -Uri <span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span> -OutFile <span style="color:#e6db74">&#34;C:\path\to\file.txt&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># or</span>
 </span></span><span style="display:flex;"><span>wget -Uri <span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span> -OutFile <span style="color:#e6db74">&#34;C:\path\to\file.txt&#34;</span>
-</span></span></code></pre></div><h3 id="download-fileless-using-powershell">Download Fileless using Powershell</h3>
+</span></span></code></pre></div><h2 id="download-fileless-strings-using-powershell">Download Fileless strings using Powershell</h2>
 <p>In very rare cases, you may need to download a file without writing it to disk. This can be done using the <code>Net.WebClient</code> class and the <code>DownloadString</code> method. The IEX command can be used to execute the downloaded script.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>$webClient = New-Object System.Net.WebClient
 </span></span><span style="display:flex;"><span>$webClient.DownloadString(<span style="color:#e6db74">&#34;http://example.com/file.txt&#34;</span>) | IEX
 </span></span></code></pre></div><hr>
-<script src="https://giscus.app/client.js"
+<h1 id="linux">Linux</h1>
+<hr>
+<h1 id="ftp">FTP</h1>
+<h3 id="server">Server</h3>
+<p>We can start a FTP server on a linux and window machine using the following command, just make sure to have the <code>pyftpdlib</code> package installed using pip or any other package manager:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo python3 -m pyftpdlib -i &lt;IP&gt; -p <span style="color:#ae81ff">21</span>
+</span></span></code></pre></div><h3 id="client-download">Client Download</h3>
+<p>here is how we can download a file from the FTP server:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ftp &lt;IP&gt;
+</span></span><span style="display:flex;"><span>UserName: anonymous
+</span></span><span style="display:flex;"><span>Password: anonymous
+</span></span><span style="display:flex;"><span>ftp&gt; get &lt;FileName&gt;
+</span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget ftp://&lt;IP&gt;/&lt;FileName&gt;
+</span></span></code></pre></div><h3 id="client-upload">Client Upload</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ftp &lt;IP&gt;
+</span></span><span style="display:flex;"><span>UserName: anonymous
+</span></span><span style="display:flex;"><span>Password: anonymous
+</span></span><span style="display:flex;"><span>ftp&gt; put &lt;FileName&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">```</span>bash
+</span></span><span style="display:flex;"><span>curl -T localfile.txt ftp://anonymous:anonymous@ftp.&lt;IP&gt;/path/to/remote/file.txt
+</span></span></code></pre></div><script src="https://giscus.app/client.js"
         data-repo="jpmcb/blog"
         data-repo-id="MDEwOlJlcG9zaXRvcnkxMTYxODMyNjg="
         data-category="Blog comments"
