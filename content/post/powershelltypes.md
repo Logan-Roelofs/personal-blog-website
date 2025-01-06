@@ -1,6 +1,6 @@
 ---
 title: "How to make custom types in PowerShell"
-date: 2023-01-01
+date: 2025-01-06
 ---
 
 Why would you want to make a custom type in PowerShell? Well, there are a few reasons. One reason is that you may want to create a custom object that has specific properties and methods that are not available in the built-in types. In this example, we make a custom type that will access the Windows API to minimize all windows when a specific process is running.

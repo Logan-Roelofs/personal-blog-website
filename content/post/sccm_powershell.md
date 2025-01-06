@@ -155,5 +155,3 @@ This script will search the registry for installed programs that have a displayn
 - Add more `Select-Object` properties to the script to include the `displayVersion` of the program. This will allow us to create fine-grained uninstall scripts that can target specific versions of a program. Additionally, we can use this information to add to a custom log file.
 
 ---
-
-{{< comments >}}
