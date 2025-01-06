@@ -28,13 +28,13 @@ languages:
     menu:
       main:
         - name: Blog
-          url: post
+          url: post/
           weight: 1
-        - name: Search
-          url: search/
-          weight: 4
+ #       - name: Search
+ #         url: search/
+ #        weight: 4
         - name: About
-          url: about
+          url: about/
           weight: 5
 
 # home-info mode
