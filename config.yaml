@@ -28,11 +28,8 @@ languages:
     menu:
       main:
         - name: Blog
-          url: archives
+          url: post
           weight: 1
-        #- name: RSS
-        #  url: index.xml
-        #  weight: 2
         - name: Search
           url: search/
           weight: 4
