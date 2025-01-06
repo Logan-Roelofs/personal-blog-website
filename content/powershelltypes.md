@@ -41,5 +41,3 @@ Remove-Job -Job $minimizeJob
 This script creates a custom type called `Win32ShowWindowAsync` that will access the `ShowWindowAsync` function in the `user32.dll` library. The `ShowWindowAsync` function will minimize a window when it is called with the `SW_MINIMIZE` parameter (6). The script then enters a loop that will continuously check for processes that match a regular expression. If a process is found, the script will get the main window handle of the process and call the `ShowWindowAsync` function to minimize the window.
 
 The script then starts a background job that will run the `MinimizeWindows` function. The script then starts a setup process that will install a program silently. Once the setup process is complete, the script will stop the background job and remove it.
-
-## {{< comments >}}

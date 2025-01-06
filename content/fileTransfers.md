@@ -79,5 +79,3 @@ ftp> put <FileName>
 ```bash
 curl -T localfile.txt ftp://anonymous:anonymous@ftp.<IP>/path/to/remote/file.txt
 ````
-
-{{< comments >}}

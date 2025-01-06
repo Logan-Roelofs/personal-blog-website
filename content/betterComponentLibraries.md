@@ -41,5 +41,3 @@ Our button component would have to be able to handle all of these features, and 
 # Conclusion
 
 Shadcn is a great resource for creating a custom component library, without the need for opiniated third partys abstracting your styles and implementation.
-
-## {{< comments >}}
